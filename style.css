@@ -31,20 +31,16 @@ a {
   text-underline-offset: 0.5em !important;
   color: var(--text-color);
 }
+p{
+  font-family: "Jost", sans-serif;
 
-.overlay {
-  position: absolute;
-  background-color: #222631;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
 }
+
 
 .heroSectionTitle {
   font-family: "Libre Caslon Text", serif;
-  font-size: 50px;
+  font-size: 65px;
+  line-height: 102px;
   font-weight: 700;
 }
 .heroButton {
@@ -62,11 +58,123 @@ a {
   height: 100vh;
   object-fit: cover;
 }
+.project-item > img{
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.project-item > img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.project-item {
+  position: relative;
+  overflow: hidden;
+}
+.project-item:hover > img {
+  transform: scale(1.2) translateX(10px);
+}
+.project-item:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 38%;
+  z-index: 99;
+  background-image: linear-gradient(transparent 0%, rgb(34, 38, 49) 100%);
+
+  background-size: cover;
+}
+.project-info {
+  position: absolute;
+  bottom: 52px;
+  left: 0;
+  width: 100%;
+  padding: 0 35px;
+  z-index: 999;
+}
+.project-info > h3 >a {
+  color: #fafafa;
+  font-size: 24px;
+  font-weight: 700;
+   font-family: "Libre Caslon Text", serif;
+  margin-bottom: 3px;
+}
+.project-info > span {
+  display: block;
+  color: #fafafa;
+  font-size: 15px;
+  font-weight: 500;
+}
+.project-item.slick-slide {
+  margin: 0 15px;
+  height: 453px;
+}
+
+/* SLIDER NEXT/PREV BUTTONS STYLING */
+
+.slick-prev,
+.slick-next {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: #dcdcdc;
+}
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: black;
+
+
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 900;
+  color: #0a0e21;
+  font-size: 16px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.slick-prev:before {
+  content: "\f104";
+}
+.project-carousel .slick-prev {
+  margin-left: -50px;
+}
+.slick-next:before {
+  content: "\f105";
+}
+.project-carousel .slick-prev,
+.project-carousel .slick-next {
+  bottom: 0;
+  top: auto;
+  -webkit-transform: inherit;
+  -moz-transform: inherit;
+  -ms-transform: inherit;
+  -o-transform: inherit;
+  transform: inherit;
+  right: auto;
+  left: -135px;
+}
+
 .aboutUsHeading {
   font-family: "Libre Caslon Text", serif;
   font-size: 48px;
   font-weight: 400;
-  color: var(--secondary-background-color);
+  color: var(--dark-background-color);
 }
 .heroSectionContainer {
   top: 40%;
@@ -80,21 +188,23 @@ a {
   font-family: "Jost", sans-serif;
 }
 .aboutus {
-  color: var(--secondary-background-color);
+  color: var(--dark-background-color);
   font-family: "Jost", sans-serif;
 }
 .aboutUsBtn {
-  background-color: var(--secondary-background-color);
+  background-color: var(--dark-background-color);
 }
 .aboutUsBtn:hover {
-  background-color: var(--dark-background-color);
+  background-color: white;
+  color: #222631 !important;
+  border: 2px solid black;
 }
 
 .whyChooseUsHeading {
   font-family: "Libre Caslon Text", serif;
   font-size: 48px;
   font-weight: 400;
-  color: var(--secondary-background-color);
+  color: var(--dark-background-color);
 }
 .whyChooseUsDescription {
   font-family: "Jost", sans-serif;
@@ -105,13 +215,15 @@ a {
   font-family: "Jost", sans-serif;
 }
 .whyChooseUs {
-  color: var(--secondary-background-color);
+  color: var(--dark-background-color);
 }
 .whyChooseUsBtn {
-  background-color: var(--secondary-background-color);
+  background-color: var(--dark-background-color);
 }
 .whyChooseUsBtn:hover {
-  background-color: var(--dark-background-color);
+  background-color: white;
+  color: #222631 !important;
+  border: 2px solid black;
 }
 .counterText {
   font-family: "Libre Caslon Text", serif;
@@ -146,14 +258,13 @@ a {
 
   color: var(--text-color);
 }
-.cctaSection{
-   height: 700px;
+.cctaSection {
+  height: 700px;
 }
 .ctaSectionHeading {
   font-family: "Libre Caslon Text", serif;
   font-size: 40px;
   line-height: 70px;
- 
 }
 .ctaSectionDescription {
   font-family: "Jost", sans-serif;
@@ -427,16 +538,41 @@ a {
 }
 
 .carousel img {
-  width: 70px;
+  width: 100%;
+  /* 
   max-height: 70px;
   border-radius: 50%;
   margin-right: 1rem;
-  overflow: hidden;
+  overflow: hidden; */
 }
 .carousel-inner {
   padding: 1em;
 }
-
+video {
+  /* width: 100vw; */
+  /* height: 822px; */
+  margin-top: 100px;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content{
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  text-align: left;
+  color: white;
+  height: 78vh;
+  width: 100%;
+  top: 50%;
+  left: 15%;
+  margin-top: 360px;
+}
 @media screen and (min-width: 576px) {
   .carousel-inner {
     display: flex;
@@ -455,7 +591,7 @@ a {
   .carousel-item {
     display: block;
     margin-right: 0;
-    flex: 0 0 calc(100% / 3);
+    flex: 0 0 calc(100% / 2);
   }
 }
 .carousel .card {
@@ -496,6 +632,7 @@ a {
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .heroSectionTitle {
     font-size: 32px;
+    line-height: 40px;
   }
 }
 
@@ -503,6 +640,8 @@ a {
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
   .heroSectionTitle {
     font-size: 28px;
+    line-height: 40px;
+
   }
   .heroDescription {
     font-size: 16px;
@@ -511,24 +650,23 @@ a {
   .whyChooseUsHeading,
   .servicesHeading,
   .numbersHeading,
-  .counterText
- {
+  .counterText {
     font-size: 32px;
   }
-  .ctaSectionHeading{
-    line-height:35px ;
+  .ctaSectionHeading {
+    line-height: 35px;
     font-size: 26px;
-width: 90vw;
+    width: 90vw;
   }
-  .contactHeading{
+  .contactHeading {
     font-size: 26px;
-
   }
   .aboutUsDescription,
   .whyChooseUsDescription,
   .servicesDescription,
   .numbersDescription,
-  .conterLabel,.ctaSectionDescription {
+  .conterLabel,
+  .ctaSectionDescription {
     font-size: 16px;
   }
   .whyChooseUsBtn2 {
@@ -537,6 +675,23 @@ width: 90vw;
   .heroSectionContainer {
     left: 40% !important;
     top: 35%;
+  }
+  video {
+    height: 550px;
+    margin-top: 100px;
+  }
+  .feature > img {
+    width: 150px;
+  }
+  .hero-content{
+left: 0;
+height: 50vh;
+margin-top: 230px;
+  }
+  .project-carousel .slick-prev,
+  .project-carousel .slick-next {
+    left: 50%;
+    top: 105%;
   }
 }
 
@@ -559,3 +714,59 @@ width: 90vw;
 /* For iPhone 6 and 6 plus Portrait or Landscape View */
 @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
 }
+
+.feature > span {
+  font-size: 25px;
+  font-family: "Jost", sans-serif !important;
+}
+.feature > i {
+  font-size: 85px;
+}
+.feature > img {
+  width: 80px;
+}
+.feature2 > img {
+  width: 160px;
+}
+.logos-slide-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.logos-slide {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.feature {
+  flex: 0 0 auto;
+  min-width: 200px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  margin: 0 20px;
+}
+.feature2 {
+  flex: 0 0 auto;
+  min-width: 200px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  margin: 0 20px;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+  
+}
+
+.logos-slide-wrapper .logos-slide {
+  animation: slide-left 20s linear infinite;
+}
+
+

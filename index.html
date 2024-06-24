@@ -39,6 +39,17 @@
       href="./assets/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <link
@@ -57,16 +68,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg fixed-top bg-secondary-subtle shadow-sm"
-    >
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
       <div class="container navBarContainer">
         <a class="navbar-brand" href="/">
           <img
-            src="./assets/images/logo/floInterioLogo.png"
+            src="./assets/images/logo/floInterioLogoBlack.png"
             alt=""
-            width="150"
-            class="bg-secondary p-3"
+            width="220"
+            class="bg- p-3"
           />
         </a>
         <button
@@ -107,36 +116,208 @@
         </div>
       </div>
     </nav>
-    <section class="heroSection">
-      <div class="overlay"></div>
-      <img
-        src="./assets/images/heroSection/heroSection2.jpg"
-        alt=""
-        class="w-100 heroSectionImg"
-      />
-      <div
-        class="position-absolute start-50 me-3 me-md-5 pe-0 pe-md-5 heroSectionContainer"
+
+    <section class="hero-section" style="position: relative; overflow: hidden">
+      <video
+        autoplay
+        muted
+        playsinline
+        loop
+        id="myVideo"
+        style="height: auto; position: absolute; z-index: -1"
       >
-        <div class="d-flex flex-column gap-2">
-          <h1 class="text-white text-end heroSectionTitle">
-            End to End Home Interiors
-          </h1>
-          <p class="text-end heroDescription">
-            Ready to transform your living or workspace but not sure where to
-            start? Unlock the door to endless possibilities with Flow Interio's
-            free consultation
-          </p>
-          <div class="text-end">
-            <button
-              class="btn btn-lg text-white px-3 px-md-4 py-2 whyChooseUsBtn whyChooseUsBtn2"
-            >
-              Book Free Consultation
+        <source src="./assets/video/HeroSectionVideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay" style=""></div>
+
+      <div class="hero-content" style="">
+        <p
+          style="background-color: #00000020; width: fit-content"
+          class="text-white fs-6 heroSpecial p-2 text-uppercase fw-bold"
+        >
+          Rooms Alive with Stories
+        </p>
+        <h1 class="heroSectionTitle pb-4">
+          Where Style Meets Comfort: <br />
+          Flow Interio's Touch
+        </h1>
+        <!-- <p class="heroDescription">
+          Ready to transform your living or workspace but not sure where to
+          start? Unlock the door to endless possibilities with Flow Interio's
+          free consultation.
+        </p> -->
+        <button
+          class="btn btn-lg text-white px-3 px-md-5 py-2 py-md-3 whyChooseUsBtn whyChooseUsBtn2"
+        >
+          Book Free Consultation
+        </button>
+      </div>
+    </section>
+    <section class="aboutSection pt-0 pt-md-5">
+      <div class="container py-5">
+        <div
+          class="d-flex gap-5 justify-content- align-items- flex-column flex-md-row"
+        >
+          <div
+            class="w-100 h-100 d-flex flex-column gap-4 justify-content-start align-items-start pt-0 pt-md-5"
+          >
+            <h6 class="text-uppercase aboutus">Contact us</h6>
+            <h1 class="aboutUsHeading fs-1">
+              Book Your Free Consultation with our Design Experts
+            </h1>
+
+            <p class="aboutUsDescription">
+              Schedule your complimentary consultation with our team of
+              experienced design professionals. Whether you're embarking on a
+              home renovation, seeking interior design advice, or exploring
+              architectural solutions, we're here to guide you every step of the
+              way.
+            </p>
+
+            <button class="btn btn-md btn-lg text-white px-4 py-2 aboutUsBtn">
+              Contact Now
             </button>
+          </div>
+          <div class="w-100 h-100">
+            <iframe
+              src="https://f.nativeforms.com/ATEZmSL1jZmg1YvJjSU1Db"
+              width="100%"
+              height="500"
+              frameborder="0"
+            >
+            </iframe>
           </div>
         </div>
       </div>
     </section>
-    <section class="aboutSection bg-secondary-subtle py-5">
+    <section class="py-5">
+      <div class="logos pt-3">
+        <h6 class="text-uppercase aboutus text-center" style="">
+          Why Flow Interio ?
+        </h6>
+        <h1 class="whyChooseUsHeading text-center pb-5 pt-3">Why Choose Us?</h1>
+        <div class="logos-slide-wrapper">
+          <div class="logos-slide">
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img
+                src="./assets/images/whychooseus/10YearsWarranty.png"
+                alt=""
+                width="100"
+              />
+              <span>10 Years Warranty</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/easyEmi's.png" alt="" />
+              <span>Easy EMI's</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/45Delivery.png" alt="" />
+              <span>45 Days Delivery</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/germanWood.png" alt="" />
+              <span>Use Of BWP Ply Wood</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img
+                src="./assets/images/whychooseus/customizedDesigns.png"
+                alt=""
+              />
+              <span>Customized Designs</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/qulaityChecks.png" alt="" />
+              <span>Quality Checks</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <i class="fas fa-tools"></i>
+              <span>German Hardware</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/expert.png" alt="" />
+              <span>Trained Experts</span>
+            </div>
+          </div>
+          <div class="logos-slide">
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img
+                src="./assets/images/whychooseus/10YearsWarranty.png"
+                alt=""
+                width="100"
+              />
+
+              <span>10 Years Warranty</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/easyEmi's.png" alt="" />
+              <span>Easy EMI's</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/45Delivery.png" alt="" />
+              <span>45 Days Delivery</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/germanWood.png" alt="" />
+              <span>Use Of BWP Ply Wood</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img
+                src="./assets/images/whychooseus/customizedDesigns.png"
+                alt=""
+              />
+              <span>Customized Designs</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/qulaityChecks.png" alt="" />
+              <span>Quality Checks</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <i class="fas fa-tools"></i>
+              <span>German Hardware</span>
+            </div>
+            <div
+              class="feature d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <img src="./assets/images/whychooseus/expert.png" alt="" />
+              <span>Trained Experts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutSection py-5">
       <div class="container py-5">
         <div
           class="d-flex gap-5 justify-content-start align-items-center flex-column flex-md-row"
@@ -169,14 +350,16 @@
             <img
               src="./assets/images/aboutus/aboutus.jpg"
               alt=""
-              class="w-100 h-100 shadow-sm rounded"
+              height="500"
+              style="object-fit: cover"
+              class="w-100 shadow-sm rounded"
             />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="whyChooseUs bg-secondary-subtle pb-5">
+    <section class="whyChooseUs pb-5">
       <div class="container py-5">
         <div
           class="d-flex gap-5 justify-content-start align-items-center flex-column flex-md-row"
@@ -185,7 +368,9 @@
             <img
               src="./assets/images/whychooseus/4507.jpg"
               alt=""
-              class="w-100 h-100 shadow-sm rounded"
+              height="600"
+              style="object-fit: cover"
+              class="w-100 shadow-sm rounded"
             />
           </div>
           <div
@@ -210,7 +395,7 @@
                 <div>
                   <h1 class="counterText">750+</h1>
                   <p class="conterLabel">
-                    Finished Projects <span style="color: #e2e3e5">Pr</span>
+                    Finished Projects <span style="color: #ffff">Pr</span>
                   </p>
                 </div>
               </div>
@@ -236,7 +421,7 @@
         </div>
       </div>
     </section>
-    <section class="ourServices">
+    <!-- <section class="ourServices">
       <div class="container py-5">
         <div class="d-flex py-5 gap-5 flex-column flex-md-row">
           <div
@@ -252,12 +437,14 @@
               to living, dining, crockery, Puja units, and wardrobes, ensuring
               style meets functionality.
             </p>
+
             <button
               class="btn btn-md btn-lg text-white px-4 py-2 whyChooseUsBtn"
             >
               Book Free Consultation
             </button>
           </div>
+
           <div
             class="w-100 d-flex gap-5"
             style="
@@ -272,7 +459,7 @@
             "
             id="scrollableDiv"
           >
-            <div class="w-100 position-relative">
+            <div class="w-100 position-relative project-item">
               <img
                 src="./assets/images/services/residentialInteriorImg.jpg"
                 alt=""
@@ -288,10 +475,14 @@
                   left: 5%;
                 "
               >
-                <h4 class="servicesDescriptionName">Residential Interior</h4>
+                <h4>
+                  <a href="#" class="servicesDescriptionName fs-4"
+                    >Residential Interior</a
+                  >
+                </h4>
               </div>
             </div>
-            <div class="w-100 position-relative">
+            <div class="w-100 position-relative project-item">
               <img
                 src="./assets/images/services/commericalInterior.jpg"
                 alt=""
@@ -310,7 +501,7 @@
                 <h4 class="servicesDescriptionName">Commercial Interior</h4>
               </div>
             </div>
-            <div class="w-100 position-relative">
+            <div class="w-100 position-relative project-item">
               <img
                 src="./assets/images/services/turnkeyInteriorImg.jpg"
                 alt=""
@@ -329,7 +520,7 @@
                 <h4 class="servicesDescriptionName">Turnkey Projects</h4>
               </div>
             </div>
-            <div class="w-100 position-relative">
+            <div class="w-100 position-relative project-item">
               <img
                 src="./assets/images/services/3dInteriorImg.jpg"
                 alt=""
@@ -348,7 +539,7 @@
                 <h4 class="servicesDescriptionName">3D Desgin Services</h4>
               </div>
             </div>
-            <div class="w-100 position-relative">
+            <div class="w-100 position-relative project-item">
               <img
                 src="./assets/images/services/rennovationInterior.jpeg"
                 alt=""
@@ -369,12 +560,125 @@
             </div>
           </div>
         </div>
-        <button id="scrollLeftBtn">Left</button>
-        <button id="scrollRightBtn">Right</button>
+        <div class="d-flex justify-content-center align-items-center gap-3">
+          <button id="scrollLeftBtn" class="btn-dark btn">
+            <i class="fa fa-arrow-left text-white fs-4"></i>
+          </button>
+          <button id="scrollRightBtn" class="btn-dark btn">
+            <i class="fa fa-arrow-right text-white fs-4"></i>
+          </button>
+        </div>
+      </div>
+    </section> -->
+    <section class="bloc2">
+      <div class="fixed-bg bg1"></div>
+      <div class="container">
+        <div class="latest-projects-section">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-5">
+              <div
+                class="d-flex flex-column gap-3 justify-content-start align-items-start"
+              >
+                <h6 class="text-uppercase aboutus">OUR SERVICES</h6>
+                <h1 class="servicesHeading">
+                  Flow Interio <br />
+                  Design Services
+                </h1>
+                <p class="servicesDescription">
+                  Flow Interio provides full interior design services, from
+                  kitchens to living, dining, crockery, Puja units, and
+                  wardrobes, ensuring style meets functionality.
+                </p>
+
+                <button
+                  class="btn btn-md btn-lg text-white px-4 py-2 whyChooseUsBtn"
+                >
+                  Book Free Consultation
+                </button>
+              </div>
+
+              <!--project-text end-->
+            </div>
+            <div class="col-lg-7 pt-5 pt-md-0">
+              <div class="project-carousel d-flex justify-content-between">
+                <div class="project-item">
+                  <img
+                    src="./assets/images/services/residentialInteriorImg.jpg"
+                    alt=""
+                    class="w-100 h-100"
+                  />
+                  <div class="project-info">
+                    <h3>
+                      <a href="#" title="">Residental Interior </a>
+                    </h3>
+                  </div>
+                  <!--project-info end-->
+                </div>
+                <!--project-item end-->
+                <div class="project-item">
+                  <img
+                    src="./assets/images/services/commericalInterior.jpg"
+                    alt=""
+                    class="w-100 h-100"
+                  />
+                  <div class="project-info">
+                    <h3>
+                      <a href="#" title="">Commerical Interior</a>
+                    </h3>
+                  </div>
+                  <!--project-info end-->
+                </div>
+                <!--project-item end-->
+                <div class="project-item">
+                  <img
+                    src="./assets/images/services/turnkeyInteriorImg.jpg"
+                    alt=""
+                    class="w-100 h-100"
+                  />
+                  <div class="project-info">
+                    <h3>
+                      <a href="#" title="">Turnkey Projects</a>
+                    </h3>
+                  </div>
+                  <!--project-info end-->
+                </div>
+                <div class="project-item">
+                  <img
+                    src="./assets/images/services/3dInteriorImg.jpg"
+                    alt=""
+                    class="w-100 h-100"
+                  />
+                  <div class="project-info">
+                    <h3>
+                      <a href="#" title="">3D Design Services</a>
+                    </h3>
+                  </div>
+                  <!--project-info end-->
+                </div>
+                <div class="project-item">
+                  <img
+                    src="./assets/images/services/rennovationInterior.jpeg"
+                    alt=""
+                    class="w-100 h-100"
+                  />
+                  <div class="project-info">
+                    <h3>
+                      <a href="#" title=""> Renovation Interior</a>
+                    </h3>
+                  </div>
+                  <!--project-info end-->
+                </div>
+                <!--project-item end-->
+              </div>
+              <!--project-carousel end-->
+            </div>
+          </div>
+        </div>
+        <!--latest-projects-section end-->
       </div>
     </section>
-    <section class="processSection bg-secondary-subtle pb-5">
-      <div class="container py-5">
+    <section class="processSection pb-5">
+      <div class="container-fluid py-5">
         <div
           class="d-flex flex-column gap-3 justify-content-center align-items-center pt-5 mt-5"
         >
@@ -386,354 +690,155 @@
             At Flow Interio, our streamlined 5-step process ensures a seamless
             journey from concept to completion.
           </p>
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center flex-column flex-md-row"
+        >
           <div
-            class="d-flex justify-content-center align-items-center gap-5 pt-5 flex-md-row flex-column"
+            class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
           >
-            <div
-              class="d-flex flex-column justify-content-center align-items-center text-center gap-3 w-100"
-            >
-              <h4 class="processHeading">01. Book An Appointment</h4>
-              <i
-                class="fas fa-calendar-alt fa-3x bg-secondary text-white p-4 rounded-circle"
-              ></i>
-              <p class="text-center processDescription">
-                This initial step involves the client meeting with a designer to
-                discuss the project's goals, preferences, budget, and timeline.
-              </p>
-            </div>
-            <div
-              class="d-flex flex-column justify-content-center align-items-center text-center gap-3 w-100"
-            >
-              <h4 class="processHeading">02.Desgin Selection</h4>
-              <i
-                class="fas fas fa-palette fa-3x bg-secondary text-white p-4 rounded-circle"
-              ></i>
-              <p class="text-center processDescription pt-2">
-                After understanding the client's needs, the designer proposes
-                one or more design concepts.This might include sketches, mood
-                boards, or digital renderings.
-              </p>
-            </div>
-            <div
-              class="d-flex flex-column justify-content-center align-items-center text-center gap-3 w-100"
-            >
-              <h4 class="processHeading">03. Production begins at Factory</h4>
-              <i
-                class="fas fa-industry fa-3x bg-secondary text-white p-4 rounded-circle"
-              ></i>
-              <p class="text-center processDescription">
-                Once the design is finalized, the production phase starts. This
-                could involve manufacturing custom pieces, ordering materials,
-                or preparing elements needed for the project.
-              </p>
-            </div>
+            <img
+              src="./assets/images/whychooseus/appointment.svg"
+              alt=""
+              class="w-100 h-100"
+            />
+            <h3 class="whyChooseUsHeading fs-4 fw-bold">Book An Appointment</h3>
           </div>
           <div
-            class="d-flex justify-content-center align-items-center gap-5 pt-5 flex-md-row flex-column"
+            class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
           >
-            <div
-              class="d-flex flex-column px-5 mx-5 justify-content-center align-items-center text-center gap-3 w-100"
-            >
-              <h4 class="processHeading">04.Installation At Site</h4>
-              <i
-                class="fas fa-tools fa-3x bg-secondary text-white p-4 rounded-circle"
-              ></i>
-              <p class="text-center processDescription pt-2">
-                With all pieces produced and ready, the next step is installing
-                them at the designated site. This process can include assembling
-                modular cabinets
-              </p>
-            </div>
-            <div
-              class="d-flex flex-column px-5 mx-5 justify-content-center align-items-center text-center gap-3 w-100"
-            >
-              <h4 class="processHeading">05. Move- In</h4>
-              <i
-                class="fas fa-home fa-3x bg-secondary text-white p-4 rounded-circle"
-              ></i>
-              <p class="text-center processDescription">
-                The final phase marks the completion of the project, where the
-                client can move into the space or start using it as intended
-              </p>
-            </div>
+            <img
+              src="./assets/images/whychooseus/DesignSelection.png"
+              alt=""
+              class="w-100 h-100"
+            />
+            <h3 class="whyChooseUsHeading fs-4 fw-bold">Design Selection</h3>
+          </div>
+          <div
+            class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
+          >
+            <img
+              src="./assets/images/whychooseus/Production.png"
+              alt=""
+              class="w-100 h-100"
+            />
+            <h3 class="whyChooseUsHeading fs-4 fw-bold">
+              Production Begins At Factory
+            </h3>
+          </div>
+          <div
+            class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
+          >
+            <img
+              src="./assets/images/whychooseus/installation.jpg"
+              alt=""
+              class="w-100 h-100"
+            />
+            <h3 class="whyChooseUsHeading fs-4 fw-bold">
+              Installation At Site
+            </h3>
+          </div>
+          <div
+            class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
+          >
+            <img
+              src="./assets/images/whychooseus/moveIn.png"
+              alt=""
+              class="w-100 h-100"
+            />
+            <h3 class="whyChooseUsHeading fs-4 fw-bold">Move In</h3>
           </div>
         </div>
       </div>
     </section>
-    <section class="">
-      <ul class="grid py-5 p pe-4">
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="1138"
-              src="https://plus.unsplash.com/premium_photo-1689609950057-8d01c2542fd1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D"
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="427"
-              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D"
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="427"
-              src="https://plus.unsplash.com/premium_photo-1674480165860-f60bcf6aa2f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D"
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="427"
-              src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww"
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="418"
-              src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGludGVyaW9yfGVufDB8fDB8fHww"
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="853"
-              src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww"
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="314"
-              src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D"
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="427"
-              src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGtpdGNoZW58ZW58MHx8MHx8fDA%3D"
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="960"
-              src="https://media.istockphoto.com/id/1473723956/photo/art-deco-interior-in-classic-style-with-pink-sofa-and-table-3d-rendering.webp?b=1&s=170667a&w=0&k=20&c=QdoRU5T8tXkWt9HVmES6yLB3CXM6cgxo2P7yjkVdIw4="
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="427"
-              src="https://media.istockphoto.com/id/1490571644/photo/digitally-generated-image-of-a-living-room-with-a-wooden-floor.webp?b=1&s=170667a&w=0&k=20&c=gxm-MnSG3mgTMuuFeQKSaxoUPMfPJITGs1p4KktI4Dg="
-              alt=""
-            />
-          </figure>
-        </li>
-        <li style="--n: 0">
-          <figure>
-            <img
-              width="640"
-              height="427"
-              src="https://images.unsplash.com/photo-1618220179428-22790b461013?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3J8ZW58MHx8MHx8fDA%3D"
-              alt=""
-            />
-          </figure>
-        </li>
-      </ul>
-    </section>
-
-    <section class="ctaSection position-relative">
-      <img
-        src="./assets/images/contactSection/contactSectionImg.jpg"
-        alt=""
-        class="w-100"
-        height="700"
-        style="object-fit: cover"
-      />
-      <div class="overlay position-absolute top-0 w-100 h-100"></div>
-      <div
-        class="position-absolute top-50 start-50 translate-middle d-flex flex-column gap-3 justify-content-center align-items-center"
-      >
-        <h6 class="text-white aboutus text-center">LET’S WORK TOGETHER</h6>
-        <h2 class="text-center text-white ctaSectionHeading">
-          HASSLE-FREE INTERIORS FROM START TO FINISH
-        </h2>
-        <p class="text-center ctaSectionDescription">
-          If you’re looking for an experienced and reliable interior designer in
-          Hyderabad, look no further than Flowinterio. Book a Free Design
-          session with our Designers .
-        </p>
-        <button class="btn btn-md btn-lg text-white px-4 py-2 whyChooseUsBtn">
-          Book Free Consultation
-        </button>
-      </div>
-    </section>
-    <section class="py-5 bg-secondary-subtle">
-      <h1 class="ClientsHeading text-center text-dark pt-5">
-        Our Esteemed Clients
-      </h1>
-      <p class="text-center text-dark ctaSectionDescription pb-3 pt-2">
-        We have succesfully completed 750 projects and 50 + communities in
-        Hyderabad
-      </p>
-      <div class="tag-scrollers pb-5">
-        <div class="tag-scroller">
-          <ul class="tag-list">
-            <li>Hallmark Vicinia</li>
-            <li>My Home Mangala</li>
-            <li>My Home Bhooja</li>
-            <li>Pebble City</li>
-            <li>NCC Urban One</li>
-            <li>Aparna Serene Park</li>
-            <li>SMR Iconia Kondapur</li>
-            <li>Fortune Green Fields</li>
-            <li>Muppa Indraprastha</li>
-            <li>May Fair Apartments</li>
-            <li>Akriti Myro</li>
-            <li>My Home Krishe</li>
-            <li>Edifice Modi Builders</li>
-            <li>Aparna Zenith</li>
-            <li>Prestige High Fields</li>
-            <li>Jewel Crest</li>
-            <li>Lansum Eden Gardens</li>
-            <li>Fronth6ne 7</li>
-            <li>North Star District One</li>
-            <li>Risinia Oyester</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="contactSection position-relative h-100">
-      <img
-        src="./assets/images/heroSection/heroSection3.jpg"
-        alt=""
-        class="w-100"
-        height="850"
-        style="object-fit: cover"
-      />
-      <div class="position-absolute bg-dark h-100 w-100 top-0 bg-opacity-25">
-        <div>
-          <div class="container">
-            <div
-              class="d-flex gap-5 justify-content-start px-0 px-md-5 align-items-center flex-column flex-md-row"
-            >
-              <div
-                class="w-100 py-5 my-5 h-100 d-flex flex-column gap-3 justify-content-center align-items-start"
-              >
-                <h6 class="text-uppercase aboutus text-white mt-5">
-                  Get In Touch
-                </h6>
-                <h1 class="whyChooseUsHeading text-white">
-                  Let's Create Your Dream Space
-                </h1>
-
-                <p class="whyChooseUsDescription text-white fs-5">
-                  Get in touch with us to discuss your <br />project or any
-                  inquiries you may have
-                </p>
-
-                <div class="contact d-flex flex-column gap-3">
-                  <a href="tel:+919494469091" class="text-white contactNum"
-                    >+91 9494469091</a
-                  >
-                  <a href="tel:+919032999763" class="text-white contactNum"
-                    >+91 9032999763</a
-                  >
-                </div>
-                <p class="whyChooseUsDescription text-white fs-5">
-                  Plot no 1299, 1st & 2nd Floor, KK Ashika Avenue, Rd Number 29,
-                  Ayyappa Society, Madhapur, Hyderabad, Telangana 500081
-                </p>
-                <a
-                  href="mailto:info@flowinterio.com"
-                  class="text-white contactNum"
-                  >info@flowinterio.com</a
-                >
-                <div
-                  class="d-flex justify-content-start align-items-center gap-3"
-                >
-                  <i class="fa-brands fa-facebook text-white fa-2x"></i>
-                  <i class="fa-brands fa-instagram text-white fa-2x"></i>
-                  <i class="fa-brands fa-youtube text-white fa-2x"></i>
-                </div>
-              </div>
-              <div class="w-100 h-100">
-                <div class="bg-secondary-subtle rounded shadow-sm p-5">
-                  <h2 class="contactHeading">Get in Touch with Us:</h2>
-                  <p class="contactDescription">
-                    Your email address will not be published.
-                  </p>
-                  <form
-                    action=""
-                    class="d-flex flex-column gap-5 justify-content-start"
-                  >
-                    <div class="d-flex flex-column">
-                      <label for="" class="mb-3 formlabel">Name *</label>
-                      <input type="text" class="formName" />
-                    </div>
-                    <div class="d-flex flex-column">
-                      <label for="" class="mb-3 formlabel">Email *</label>
-                      <input type="text" class="formName" />
-                    </div>
-                    <div class="d-flex flex-column">
-                      <label for="" class="mb-3 formlabel">Mobile *</label>
-                      <input type="text" class="formName" />
-                    </div>
-                    <div class="d-flex flex-column">
-                      <label for="" class="mb-3 formlabel">Message </label>
-                      <textarea name="" id="" class="formName"></textarea>
-                    </div>
-                    <div class="text-start">
-                      <button
-                        class="btn bg-secondary text-white border btn-md px-5 heroButton py-2 fs-6"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-secondary-subtle h-100 pt-5">
+    <section class="extraServices">
       <div class="container py-5">
+        <h6 class="text-uppercase aboutus text-center pt-5">
+          our Unparalled Services
+        </h6>
+        <h1 class="whyChooseUsHeading fs-1 text-center text-dark py-2">
+          Enhance Your Space <br />
+          with Our Additional Services
+        </h1>
+
+        <div
+          class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column flex-md-row"
+        >
+          <div class="w-100 d-flex flex-column p-4 rounded shadow">
+            <i class="fas fa-hard-hat fs-2"></i>
+            <h4 class="extraServicesHeading fs-4 pt-3">Civil Work</h4>
+            <p class="extraServicesDescription">
+              Our civil work services ensure robust construction and seamless
+              integration of architectural plans, enhancing the durability and
+              functionality
+            </p>
+          </div>
+          <div class="w-100 d-flex flex-column p-4 rounded shadow">
+            <i class="fas fa-bolt fs-2"></i>
+            <h4 class="extraServicesHeading fs-4 pt-3">Electrical Work</h4>
+            <p class="extraServicesDescription">
+              From wiring to fixture installation, our electrical services
+              guarantee efficient and safe electrical systems tailored to your
+              interior design requirements.
+            </p>
+          </div>
+          <div class="w-100 d-flex flex-column p-4 rounded shadow">
+            <i class="fa fa-th fs-2"></i>
+            <h4 class="extraServicesHeading fs-4 pt-3">Tiles</h4>
+            <p class="extraServicesDescription">
+              Transform your floors with our wide range of tiles, expertly
+              installed to enhance aesthetics, durability, and comfort in every
+              room.
+            </p>
+          </div>
+        </div>
+        <div
+          class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column flex-md-row"
+        >
+          <div class="w-100 d-flex flex-column p-4 rounded shadow">
+            <i class="fas fa-paint-roller fs-2"></i>
+            <h4 class="extraServicesHeading fs-4 pt-3">Wall Papers</h4>
+            <p class="extraServicesDescription">
+              Elevate your walls with our collection of stylish wallpapers,
+              offering versatility and personality to complement any interior
+              design theme.
+            </p>
+          </div>
+          <div class="w-100 d-flex flex-column p-4 rounded shadow">
+            <i class="fas fa-paint-brush fs-2"></i>
+            <h4 class="extraServicesHeading fs-4 pt-3">Painting</h4>
+            <p class="extraServicesDescription">
+              Achieve flawless finishes and vibrant hues with our professional
+              painting services, tailored to enhance the ambiance and longevity
+              of your spaces.
+            </p>
+          </div>
+          <div class="w-100 h-100 d-flex flex-column position-relative">
+            <img
+              src="./assets/images/gatedcommunitiesSection/transformImages.jpg"
+              alt=""
+              class="w-100 rounded"
+              height="255"
+              style="object-fit: cover"
+            />
+            <div class="overlay position-absolute"></div>
+            <div class="position-absolute text-white pt-5 mt-3 px-5">
+              <h4 class="extraServicesHeading">
+                Design, Production & Execution By Flow Interio
+              </h4>
+              <a
+                href=" "
+                class="text-white extraServicesDescription link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Learn More
+                <i class="fa fa-arrow-right text-white ms-2 pt-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-100 pt-0 pt-md-5">
+      <div class="container pb-5">
         <div
           class="d-flex justify-content-around align-items-center gap-5 flex-column flex-md-row"
         >
@@ -791,107 +896,170 @@
         </div>
       </div>
     </section>
-    <section class="extraServices bg-light">
-      <div class="container py-5">
-        <h6 class="text-uppercase aboutus text-center pt-5">
-          our Unparalled Services
-        </h6>
-        <h1 class="whyChooseUsHeading fs-1 text-center text-dark py-2">
-          Enhance Your Space <br />
-          with Our Additional Services
-        </h1>
-
-        <div
-          class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column flex-md-row"
-        >
-          <div
-            class="w-100 d-flex flex-column bg-secondary-subtle p-4 rounded shadow-sm"
-          >
-            <i class="fas fa-hard-hat fs-2"></i>
-            <h4 class="extraServicesHeading fs-4 pt-3">Civil Work</h4>
-            <p class="extraServicesDescription">
-              Our civil work services ensure robust construction and seamless
-              integration of architectural plans, enhancing the durability and
-              functionality
-            </p>
-          </div>
-          <div
-            class="w-100 d-flex flex-column bg-secondary-subtle p-4 rounded shadow-sm"
-          >
-            <i class="fas fa-bolt fs-2"></i>
-            <h4 class="extraServicesHeading fs-4 pt-3">Electrical Work</h4>
-            <p class="extraServicesDescription">
-              From wiring to fixture installation, our electrical services
-              guarantee efficient and safe electrical systems tailored to your
-              interior design requirements.
-            </p>
-          </div>
-          <div
-            class="w-100 d-flex flex-column bg-secondary-subtle p-4 rounded shadow-sm"
-          >
-            <i class="fa fa-th fs-2"></i>
-            <h4 class="extraServicesHeading fs-4 pt-3">Tiles</h4>
-            <p class="extraServicesDescription">
-              Transform your floors with our wide range of tiles, expertly
-              installed to enhance aesthetics, durability, and comfort in every
-              room.
-            </p>
-          </div>
+    <!-- 
+    <section class="ctaSection position-relative">
+      <img
+        src="./assets/images/contactSection/contactSectionImg.jpg"
+        alt=""
+        class="w-100"
+        height="700"
+        style="object-fit: cover"
+      />
+      <div class="overlay position-absolute top-0 w-100 h-100"></div>
+      <div
+        class="position-absolute top-50 start-50 translate-middle d-flex flex-column gap-3 justify-content-center align-items-center"
+      >
+        <h6 class="text-white aboutus text-center">LET’S WORK TOGETHER</h6>
+        <h2 class="text-center text-white ctaSectionHeading">
+          HASSLE-FREE INTERIORS FROM START TO FINISH
+        </h2>
+        <p class="text-center ctaSectionDescription">
+          If you’re looking for an experienced and reliable interior designer in
+          Hyderabad, look no further than Flowinterio. Book a Free Design
+          session with our Designers .
+        </p>
+        <button class="btn btn-md btn-lg text-white px-4 py-2 whyChooseUsBtn">
+          Book Free Consultation
+        </button>
+      </div>
+    </section> -->
+    <section class="py-5">
+      <h1 class="ClientsHeading text-center text-dark pt-5">
+        Our Esteemed Clients
+      </h1>
+      <p class="text-center text-dark ctaSectionDescription pb-3 pt-2">
+        We have succesfully completed 750 projects and 50 + communities in
+        Hyderabad
+      </p>
+      <div class="tag-scrollers pb-5">
+        <div class="tag-scroller">
+          <ul class="tag-list">
+            <li>Hallmark Vicinia</li>
+            <li>My Home Mangala</li>
+            <li>My Home Bhooja</li>
+            <li>Pebble City</li>
+            <li>NCC Urban One</li>
+            <li>Aparna Serene Park</li>
+            <li>SMR Iconia Kondapur</li>
+            <li>Fortune Green Fields</li>
+            <li>Muppa Indraprastha</li>
+            <li>May Fair Apartments</li>
+            <li>Akriti Myro</li>
+            <li>My Home Krishe</li>
+            <li>Edifice Modi Builders</li>
+            <li>Aparna Zenith</li>
+            <li>Prestige High Fields</li>
+            <li>Jewel Crest</li>
+            <li>Lansum Eden Gardens</li>
+            <li>Fronth6ne 7</li>
+            <li>North Star District One</li>
+            <li>Risinia Oyester</li>
+          </ul>
         </div>
-        <div
-          class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column flex-md-row"
-        >
-          <div
-            class="w-100 d-flex flex-column bg-secondary-subtle p-4 rounded shadow-sm"
-          >
-            <i class="fas fa-paint-roller fs-2"></i>
-            <h4 class="extraServicesHeading fs-4 pt-3">Wall Papers</h4>
-            <p class="extraServicesDescription">
-              Elevate your walls with our collection of stylish wallpapers,
-              offering versatility and personality to complement any interior
-              design theme.
-            </p>
-          </div>
-          <div
-            class="w-100 d-flex flex-column bg-secondary-subtle p-4 rounded shadow-sm"
-          >
-            <i class="fas fa-paint-brush fs-2"></i>
-            <h4 class="extraServicesHeading fs-4 pt-3">Painting</h4>
-            <p class="extraServicesDescription">
-              Achieve flawless finishes and vibrant hues with our professional
-              painting services, tailored to enhance the ambiance and longevity
-              of your spaces.
-            </p>
-          </div>
-          <div class="w-100 h-100 d-flex flex-column position-relative">
-            <img
-              src="./assets/images/gatedcommunitiesSection/transformImages.jpg"
-              alt=""
-              class="w-100 rounded"
-              height="255"
-              style="object-fit: cover"
-            />
-            <div class="overlay position-absolute"></div>
-            <div class="position-absolute text-white pt-5 mt-3 px-5">
-              <h4 class="extraServicesHeading">
-                Design, Production & Execution By Flow Interio
-              </h4>
-              <a
-                href=" "
-                class="text-white extraServicesDescription link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                >Learn More
-                <i class="fa fa-arrow-right text-white ms-2 pt-2"></i
-              ></a>
+      </div>
+    </section>
+
+    <section class="contactSection position-relative h-100 mt-5">
+      <img
+        src="./assets/images/heroSection/heroSection3.jpg"
+        alt=""
+        class="w-100"
+        height="850"
+        style="object-fit: cover"
+      />
+      <div class="position-absolute bg-dark h-100 w-100 top-0 bg-opacity-25">
+        <div>
+          <div class="container">
+            <div
+              class="d-flex gap-5 justify-content-start px-0 px-md-5 align-items-center flex-column flex-md-row"
+            >
+              <div
+                class="w-100 py-5 my-5 h-100 d-flex flex-column gap-3 justify-content-center align-items-start"
+              >
+                <h6 class="text-uppercase aboutus text-white mt-5">
+                  Get In Touch
+                </h6>
+                <h1 class="whyChooseUsHeading text-white">
+                  Let's Create Your Dream Space
+                </h1>
+
+                <p class="whyChooseUsDescription text-white fs-5">
+                  Get in touch with us to discuss your <br />project or any
+                  inquiries you may have
+                </p>
+
+                <div class="contact d-flex flex-column gap-3">
+                  <a href="tel:+919494469091" class="text-white contactNum"
+                    >+91 9494469091</a
+                  >
+                  <a href="tel:+919032999763" class="text-white contactNum"
+                    >+91 9032999763</a
+                  >
+                </div>
+                <p class="whyChooseUsDescription text-white fs-5">
+                  Plot no 1299, 1st & 2nd Floor, KK Ashika Avenue, Rd Number 29,
+                  Ayyappa Society, Madhapur, Hyderabad, Telangana 500081
+                </p>
+                <a
+                  href="mailto:info@flowinterio.com"
+                  class="text-white contactNum"
+                  >info@flowinterio.com</a
+                >
+                <div
+                  class="d-flex justify-content-start align-items-center gap-3"
+                >
+                  <i class="fa-brands fa-facebook text-white fa-2x"></i>
+                  <i class="fa-brands fa-instagram text-white fa-2x"></i>
+                  <i class="fa-brands fa-youtube text-white fa-2x"></i>
+                </div>
+              </div>
+              <div class="w-100 h-100">
+                <div class="bg-white rounded shadow-sm p-5">
+                  <h2 class="contactHeading">Get in Touch with Us:</h2>
+                  <p class="contactDescription">
+                    Your email address will not be published.
+                  </p>
+                  <form
+                    action=""
+                    class="d-flex flex-column gap-5 justify-content-start"
+                  >
+                    <div class="d-flex flex-column">
+                      <label for="" class="mb-3 formlabel">Name *</label>
+                      <input type="text" class="formName" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <label for="" class="mb-3 formlabel">Email *</label>
+                      <input type="text" class="formName" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <label for="" class="mb-3 formlabel">Mobile *</label>
+                      <input type="text" class="formName" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <label for="" class="mb-3 formlabel">Message </label>
+                      <textarea name="" id="" class="formName"></textarea>
+                    </div>
+                    <div class="text-start">
+                      <button
+                        class="btn bg-secondary text-white border btn-md px-5 heroButton py-2 fs-6"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="YouTubeSection bg-secondary-subtle py-5">
+
+    <section class="YouTubeSection py-5">
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="ClientsHeading">YouTube Reviews</h2>
+            <h2 class="ClientsHeading">Video Testimonials</h2>
             <p class="text-center ctaSectionDescription text-dark fs-5 pt-2">
               Watch what our clients have to say about their experience with
               Flow Interio.
@@ -986,119 +1154,131 @@
         </div>
       </div>
     </section>
-    <section class="py-5">
-      <div class="container py-5">
-        <h2 class="ClientsHeading text-center">Client Testimonials</h2>
-        <p class="text-center ctaSectionDescription text-dark fs-5 pt-2">
-          Hear what our satisfied clients have to say about their experience
-          with Flow Interio.
-        </p>
-        <div id="testimonialCarousel" class="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card shadow-sm rounded-3 bg-secondary-subtle">
-                <div class="quotes display-2 text-body-tertiary">
-                  <i class="bi bi-quote"></i>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Hi.. Recently when we were searching for a good interior
-                    company for our 3bhk flat we found flow Interio on
-                    Instagram..we have visited their executed villa and was very
-                    impressed with their work.. Soon after finalizing the design
-                    and as per agreed timelines modular was delivered.. We are
-                    very happy with their finishes.
-                  </p>
-                  <div class="d-flex align-items-center pt-2">
-                    <div>
-                      <h5 class="card-title fw-bold">Akshara Aashrita</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card shadow-sm rounded-3 bg-secondary-subtle">
-                <div class="quotes display-2 text-body-tertiary">
-                  <i class="bi bi-quote"></i>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Great work and polite staff. We are satisfied with the
-                    interior designs and work. The service for any damages/
-                    repairs is very quick. I will definitely recommend it to
-                    anyone.
-                  </p>
-                  <div class="d-flex align-items-center pt-2">
-                    <div>
-                      <h5 class="card-title fw-bold">Radhakrishna kompalli</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card shadow-sm rounded-3 bg-secondary-subtle">
-                <div class="quotes display-2 text-body-tertiary">
-                  <i class="bi bi-quote"></i>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Good team. Good Management. Worth a try. Flexible and good
-                    listeners.
-                  </p>
-                  <div class="d-flex align-items-center pt-2">
-                    <div>
-                      <h5 class="card-title fw-bold">Muralee Korada</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card shadow-sm rounded-3 bg-secondary-subtle">
-                <div class="quotes display-2 text-body-tertiary">
-                  <i class="bi bi-quote"></i>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    We have approached Flow Interio for the interior work to be
-                    done for 2BHK. Design Team is really good. Overall
-                    experience is very good. Particularly, the service team and
-                    carpenters are very professional and I am extremely happy
-                    with the service. Thank you Flow Interio.
-                  </p>
-                  <div class="d-flex align-items-center pt-2">
-                    <div>
-                      <h5 class="card-title fw-bold">Talamari Meena</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+    <div class="pb-5 mb-5">
+      <h1 class="ClientsHeading text-center text-dark ">
+        Our Trusted Brand Partners
+      </h1>
+
+      <div class="logos-slide-wrapper">
+        <div class="logos-slide">
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand1.webp" alt="brand Partner" width="" />
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide="prev"
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide="next"
+            <img src="./assets/images/brandPartners/brand2.webp" alt="brand Partner" width="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <img src="./assets/images/brandPartners/brand4.webp" alt="brand Partner" width="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand5.webp" alt="brand Partner" width="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand6.webp" alt="brand Partner" width="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand7.webp" alt="brand Partner" width="" />
+          </div>
+
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand8.webp" alt="brand Partner" width="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand9.webp" alt="brand Partner" width="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand10.webp" alt="brand Partner" width="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand11.webp" alt="brand Partner" width="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand12.webp" alt="brand Partner" width="" />
+          </div>
+        </div>
+        <div class="logos-slide">
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand1.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand2.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand4.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand5.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand6.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand7.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand8.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand9.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand10.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand11.webp" alt="" />
+          </div>
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center "
+          >
+            <img src="./assets/images/brandPartners/brand12.webp" alt="" />
+          </div>
         </div>
       </div>
-    </section>
-    <footer class="bg-secondary-subtle py-5">
+    </div>
+    <footer class="py-5 shadow border border-top border-dark">
       <div class="container py-5">
         <h3 class="footerText text-end">
           Customized Designs for your Budget & Style
@@ -1114,9 +1294,9 @@
         <div class="d-flex pt-5 flex-column flex-md-row gap-5">
           <div class="w-100">
             <img
-              src="./assets/images/logo/floInterioLogo.png"
+              src="./assets/images/logo/floInterioLogoBlack.png"
               alt=""
-              class="bg-secondary p-3"
+              class=""
               width="200"
             />
             <div class="contact d-flex flex-column gap-3 pt-4">
@@ -1146,7 +1326,7 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
-          
+
               <li class="nav-item">
                 <a class="nav-link" href="#">Blogs</a>
               </li>
@@ -1215,13 +1395,56 @@
         </h6>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".project-carousel").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        centerMode: false,
+        focusOnSelect: true,
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2000, // Set autoplay speed to 2 seconds
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
     <script>
       const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
       if (mediaQuery && !mediaQuery.matches) {
@@ -1285,117 +1508,6 @@
           });
         }
       }
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        const multipleItemCarousel = document.querySelector(
-          "#testimonialCarousel"
-        );
-
-        if (window.matchMedia("(min-width:576px)").matches) {
-          const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-            interval: false,
-          });
-
-          var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-          var cardWidth = $(".carousel-item").width();
-
-          var scrollPosition = 0;
-
-          $(".carousel-control-next").on("click", function () {
-            if (scrollPosition < carouselWidth - cardWidth * 3) {
-              console.log("next");
-              scrollPosition = scrollPosition + cardWidth;
-              $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
-            }
-          });
-          $(".carousel-control-prev").on("click", function () {
-            if (scrollPosition > 0) {
-              scrollPosition = scrollPosition - cardWidth;
-              $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
-            }
-          });
-        } else {
-          $(multipleItemCarousel).addClass("slide");
-        }
-      });
-    </script>
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-  var scrollableDiv = document.getElementById("scrollableDiv");
-  var scrollLeftBtn = document.getElementById("scrollLeftBtn");
-  var scrollRightBtn = document.getElementById("scrollRightBtn");
-
-  var itemWidth = 300; // Adjust this based on your item width (same as width in CSS)
-  var scrollInterval = 1000; // Scroll every 5 seconds
-
-  var scrollIntervalId; // Variable to hold the interval ID
-
-  function startAutoScroll() {
-    scrollIntervalId = setInterval(function () {
-      if (scrollableDiv.scrollLeft + scrollableDiv.clientWidth >= scrollableDiv.scrollWidth) {
-        scrollableDiv.scrollTo({
-          left: 0,
-          behavior: "smooth"
-        });
-      } else {
-        scrollableDiv.scrollLeft += itemWidth;
-      }
-    }, scrollInterval);
-  }
-
-  function stopAutoScroll() {
-    clearInterval(scrollIntervalId);
-  }
-
-  // Start auto scroll immediately on page load
-  startAutoScroll();
-
-  // Stop auto scroll when user interacts with the buttons
-  scrollLeftBtn.addEventListener("click", function () {
-    stopAutoScroll();
-    if (scrollableDiv.scrollLeft <= 0) {
-      scrollableDiv.scrollTo({
-        left: scrollableDiv.scrollWidth,
-        behavior: "smooth"
-      });
-    } else {
-      scrollableDiv.scrollLeft -= itemWidth;
-    }
-    startAutoScroll();
-  });
-
-  scrollRightBtn.addEventListener("click", function () {
-    stopAutoScroll();
-    if (scrollableDiv.scrollLeft + scrollableDiv.clientWidth >= scrollableDiv.scrollWidth) {
-      scrollableDiv.scrollTo({
-        left: 0,
-        behavior: "smooth"
-      });
-    } else {
-      scrollableDiv.scrollLeft += itemWidth;
-    }
-    startAutoScroll();
-  });
-
-  // Optional: Auto loop back to start if at the end
-  scrollableDiv.addEventListener("scroll", function () {
-    if (scrollableDiv.scrollLeft <= 0) {
-      scrollableDiv.scrollTo({
-        left: scrollableDiv.scrollWidth,
-        behavior: "smooth"
-      });
-    } else if (scrollableDiv.scrollLeft + scrollableDiv.clientWidth >= scrollableDiv.scrollWidth) {
-      scrollableDiv.scrollTo({
-        left: 0,
-        behavior: "smooth"
-      });
-    }
-  });
-});
-
-
     </script>
   </body>
 </html>
