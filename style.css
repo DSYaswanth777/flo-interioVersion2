@@ -36,7 +36,9 @@ p{
 
 }
 
-
+.navbar-brand img{
+width: 220px;
+}
 .heroSectionTitle {
   font-family: "Libre Caslon Text", serif;
   font-size: 65px;
@@ -696,6 +698,9 @@ margin-top: 230px;
   .contactSection{
     margin-bottom: 580px;
   }
+  .navbar-brand img{
+    width: 170px;
+    }
 }
 
 /* For Mobile Landscape View */
