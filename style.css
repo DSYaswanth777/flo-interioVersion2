@@ -487,7 +487,7 @@ p{
 .contactHeading {
   font-family: "Libre Caslon Text", serif;
 
-  font-size: 36px;
+  font-size: 29px;
   color: var(--text-color);
 }
 .contactDescription {
@@ -693,6 +693,9 @@ margin-top: 230px;
     left: 50%;
     top: 105%;
   }
+  .contactSection{
+    margin-bottom: 580px;
+  }
 }
 
 /* For Mobile Landscape View */
@@ -723,7 +726,7 @@ margin-top: 230px;
   font-size: 85px;
 }
 .feature > img {
-  width: 80px;
+  width: 70px;
 }
 .feature2 > img {
   width: 160px;
