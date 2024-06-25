@@ -813,6 +813,9 @@ video {
   display: flex;
   display: -webkit-flex;
 }
+.feature > img {
+  width: 90px;
+}
 @media screen and (min-width: 1024px) {
 }
 
@@ -868,7 +871,7 @@ video {
     margin-top: 100px;
   }
   .feature > img {
-    width: 150px;
+    width: 70px;
   }
   .hero-content {
     left: 0;
