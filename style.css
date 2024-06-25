@@ -240,6 +240,17 @@ p {
 .whyChooseUsBtn {
   font-family: "Jost", sans-serif;
 }
+.heroButton{
+  font-family: "Jost", sans-serif;
+  background-color: white;
+  color: #0a0e21;
+font-size: 22px;
+}
+.heroButton:hover{
+  font-family: "Jost", sans-serif;
+  background-color: var(--dark-background-color);
+  color: #ffff;
+}
 .whyChooseUs {
   color: var(--dark-background-color);
 }
