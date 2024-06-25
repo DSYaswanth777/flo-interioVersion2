@@ -1,100 +1,88 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap);
+*,
+a,
+body {
+  color: var(--text-color);
+}
 :root {
   --text-color: #222631;
   --dark-background-color: #222631;
   --light-background-color: #f6f7f9;
   --secondary-background-color: #6b7483;
 }
-
 *,
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: var(--text-color);
   scroll-behavior: smooth;
 }
 a {
   font-style: normal;
   font-weight: 400;
-  color: var(--text-color);
   text-decoration: none;
   font-size: 16px;
 }
-ul li 
-{
+ul li {
   list-style-type: none;
 }
-.nav-link,.dropdown-item {
-  font-family: "Jost", sans-serif !important;
+.dropdown-item,
+.nav-link {
+  font-family: Jost, sans-serif !important;
   font-size: 16px;
   text-decoration: underline;
   text-underline-offset: 0.5em !important;
   color: var(--text-color);
 }
 p {
-  font-family: "Jost", sans-serif;
+  font-family: Jost, sans-serif;
 }
-
 .navbar-brand img {
   width: 220px;
 }
-/* Dropdown menu */
 .dropdown-menu {
-  background-color: #ffffff; /* Background color */
-  border: none; /* Remove default border */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .dropdown-menu a {
-  color: #222631; /* Text color */
-  font-size: 16px; /* Font size */
-  padding: 10px 20px; /* Padding */
+  color: #222631;
+  font-size: 16px;
+  padding: 10px 20px;
 }
-
 .dropdown-menu a:hover {
-  background-color: #f6f7f9; /* Hover background color */
+  background-color: #f6f7f9;
 }
 .dropdown-toggle::after {
   border: none;
   content: "+";
   position: absolute;
-  /* left: 70px; */
 }
-/* Navbar Dropdown Hover Effect */
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
-
 .heroSectionTitle {
   font-family: "Libre Caslon Text", serif;
   font-size: 60px;
   line-height: 102px;
 }
-.heroButton {
-  font-family: "Jost", sans-serif !important;
+.heroButton{
+  font-family: Jost, sans-serif !important;
   font-weight: 400;
 }
-.heroDescription {
-  font-family: "Jost", sans-serif !important;
-  font-weight: 400;
-  font-size: 18px;
-  color: var(--light-background-color);
-}
+
 .heroSectionImg {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
 .project-item > img {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-.project-item > img {
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   width: 100%;
   display: block;
   height: 100%;
@@ -115,7 +103,7 @@ p {
   width: 100%;
   height: 38%;
   z-index: 99;
-  background-image: linear-gradient(transparent 0%, rgb(34, 38, 49) 100%);
+  background-image: linear-gradient(transparent 0, #222631 100%);
   background-size: cover;
 }
 .project-info {
@@ -143,11 +131,8 @@ p {
   margin: 0 15px;
   height: 453px;
 }
-
-/* SLIDER NEXT/PREV BUTTONS STYLING */
-
-.slick-prev,
-.slick-next {
+.slick-next,
+.slick-prev {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -155,12 +140,16 @@ p {
   text-align: center;
   background-color: #dcdcdc;
 }
-.slick-prev:hover:before,
-.slick-next:hover:before {
-  color: black;
+.aboutus-page .right .intro-content,
+.hero-content {
+  text-align: left;
 }
-.slick-prev:before,
-.slick-next:before {
+.slick-next:hover:before,
+.slick-prev:hover:before {
+  color: #000;
+}
+.slick-next:before,
+.slick-prev:before {
   font-family: "Font Awesome 5 Free";
   position: absolute;
   top: 50%;
@@ -183,8 +172,8 @@ p {
 .slick-next:before {
   content: "\f105";
 }
-.project-carousel .slick-prev,
-.project-carousel .slick-next {
+.project-carousel .slick-next,
+.project-carousel .slick-prev {
   bottom: 0;
   top: auto;
   -webkit-transform: inherit;
@@ -195,104 +184,85 @@ p {
   right: auto;
   left: -135px;
 }
-
-.aboutUsHeading {
-  font-family: "Libre Caslon Text", serif;
-  font-size: 48px;
-  font-weight: 400;
-  color: var(--dark-background-color);
-}
-.heroSectionContainer {
-  top: 40%;
-}
-.aboutUsDescription {
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-}
-.aboutUsBtn {
-  font-family: "Jost", sans-serif;
-}
-.aboutus {
-  color: var(--dark-background-color);
-  font-family: "Jost", sans-serif;
-}
-.aboutUsBtn {
-  background-color: var(--dark-background-color);
-}
-.aboutUsBtn:hover {
-  background-color: white;
-  color: #222631 !important;
-  border: 2px solid black;
-}
-
+.aboutUsHeading,
 .whyChooseUsHeading {
   font-family: "Libre Caslon Text", serif;
   font-size: 48px;
   font-weight: 400;
   color: var(--dark-background-color);
 }
+.aboutUsBtn,
+.aboutus,
+.heroButton:hover,
+.whyChooseUsBtn {
+  font-family: Jost, sans-serif;
+}
+.heroSectionContainer {
+  top: 40%;
+}
+.aboutUsDescription,
+.servicesDescription,
 .whyChooseUsDescription {
-  font-family: "Jost", sans-serif;
+  font-family: Jost, sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
+.aboutUsBtn,
 .whyChooseUsBtn {
-  font-family: "Jost", sans-serif;
+  background-color: var(--dark-background-color);
 }
-.heroButton{
-  font-family: "Jost", sans-serif;
-  background-color: white;
+.aboutus {
+  color: var(--dark-background-color);
+}
+.conterLabel,
+.counterText,
+.extraServicesHeading,
+.numbersHeading,
+.servicesDescriptionName,
+.servicesHeading {
+  font-family: "Libre Caslon Text", serif;
+}
+.aboutUsBtn:hover,
+.whyChooseUsBtn:hover {
+  background-color: #fff;
+  color: #222631 !important;
+  border: 2px solid #000;
+}
+.heroButton {
+  background-color: #fff;
   color: #0a0e21;
-font-size: 22px;
+  font-size: 22px;
 }
-.heroButton:hover{
-  font-family: "Jost", sans-serif;
+.heroButton:hover {
   background-color: var(--dark-background-color);
   color: #ffff;
 }
 .whyChooseUs {
   color: var(--dark-background-color);
 }
-.whyChooseUsBtn {
-  background-color: var(--dark-background-color);
-}
-.whyChooseUsBtn:hover {
-  background-color: white;
-  color: #222631 !important;
-  border: 2px solid black;
-}
 .counterText {
-  font-family: "Libre Caslon Text", serif;
   font-size: 38px;
   font-weight: 400;
 }
 .conterLabel {
-  font-family: "Libre Caslon Text", serif;
   font-size: 18px;
   font-weight: 400;
 }
-
+.numbersHeading,
 .servicesHeading {
-  font-family: "Libre Caslon Text", serif;
   font-size: 48px;
 }
-.servicesDescription {
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-}
-.servicesDescriptionName {
-  font-family: "Libre Caslon Text", serif;
-}
+.contactHeading,
+.contactHeading2,
+.footerHeading,
 .processHeading {
   font-family: "Libre Caslon Text", serif;
   color: var(--text-color);
 }
-
+.footerDescrition,
+.formlabel,
 .processDescription {
-  font-family: "Jost", sans-serif;
-
+  font-family: Jost, sans-serif;
   color: var(--text-color);
 }
 .cctaSection {
@@ -304,26 +274,33 @@ font-size: 22px;
   line-height: 70px;
 }
 .ctaSectionDescription {
-  font-family: "Jost", sans-serif;
+  font-family: Jost, sans-serif;
   color: var(--light-background-color);
   font-size: 20px;
 }
-
+.ClientsHeading,
+.card-text,
+.contactDescription,
+.formName,
+.numbers {
+  color: var(--text-color);
+}
 .ClientsHeading {
   font-family: "Libre Caslon Text", serif;
-  color: var(--text-color);
   font-weight: 500;
 }
-
+.card-text,
+.contactDescription,
+.contactNum,
+.formName,
+.numbers,
+.tag-list li {
+  font-family: Jost, sans-serif;
+}
 .tag-scrollers {
   width: 100%;
-
   overflow: hidden;
 }
-
-/*	POSSIBLY UPDATE COLORS IN THE GRADIENT
-		TO MATCH THE PROJECTS DESIGN SYSTEM
-*/
 .tag-scroller {
   display: grid;
   gap: 1.5rem;
@@ -335,25 +312,14 @@ font-size: 22px;
     #0000
   );
 }
-
 .tag-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  /*	IF THE GAP IS CHANGED, DON'T FORGET TO CHANGE 
-			THE TRANSFORM VALUE IN THE SCROLL ANIMATION
-			AT THE END OF THE STYLING
-	*/
   gap: 1.5rem;
 }
-
-/*	IF THE USERS PREFERS REDUCED MOTION
-		PRESENT THEM WITH A HOROZONTAL LIST
-		OF ALL ELEMENTS AND GIVE THEM THE
-		OPTION TO MANUALLY SCROLL BY SWIPING
-*/
 @media (prefers-reduced-motion) {
   .tag-list {
     flex-flow: row nowrap;
@@ -362,10 +328,10 @@ font-size: 22px;
     scrollbar-color: transparent transparent;
   }
   .tag-list::-webkit-scrollbar-track {
-    background: transparent;
+    background: 0 0;
   }
   .tag-list::-webkit-scrollbar-thumb {
-    background: transparent;
+    background: 0 0;
   }
   .tag-list::-webkit-scrollbar {
     display: none;
@@ -373,15 +339,7 @@ font-size: 22px;
     height: 0;
   }
 }
-
-/*	BASIC STYLING OF THE LIST ITEMS
-		FOR DEMO PURPOSES. MOST PROPERTIES
-		SHOULD BE KEPT AS IS BUT PROBABLY
-		UPDATE THE VALUE FOR font-family
-		AND border
-*/
 .tag-list li {
-  font-family: "Jost", sans-serif;
   font-size: 1.125rem;
   line-height: 1;
   padding: 0.625rem 1.375rem;
@@ -389,64 +347,30 @@ font-size: 22px;
   border-radius: 10ch;
   white-space: nowrap;
 }
-
-/*	THE DURATION IS SET FROM A CUSTOM PROPERTY
-		CALCULATED IN THE SCRIPT AS IT'S ONLY NEEDED
-		IF THE ANIMATION SHOULD RUN, WHICH IS ALSO
-		CHECKED BY THE SCRIPT
-
-		THE DIRECTION IS SET TO normal AS DEFULT
-		AND THEN SET TO reverse	FOR EVERY OTHER SCROLLER
-*/
 .tag-scroller.scrolling .tag-list {
   width: max-content;
   flex-wrap: nowrap;
   animation: horizontal-scroll var(--duration) var(--direction, normal) linear
     infinite;
 }
-
-.tag-scroller.scrolling .tag-list:nth-child(even) {
+.tag-scroller.scrolling .tag-list:nth-child(2n) {
   --direction: reverse;
 }
-
-/* PAUSING THE ANIMATION ON HOVER */
 .tag-scroller:hover .tag-list {
   animation-play-state: paused;
 }
-
 @keyframes horizontal-scroll {
   to {
-    /*	0.75rem FOR HALF THE GAP
-				OF THE .tag-scroller
-		*/
     transform: translateX(calc(-50% - 0.75rem));
   }
 }
-
 .contactNum {
-  font-family: "Jost", sans-serif;
-
   font-size: 24px;
 }
-
-.contactHeading {
-  font-family: "Libre Caslon Text", serif;
-
-  font-size: 29px;
-  color: var(--text-color);
-}
 .contactDescription {
-  font-family: "Jost", sans-serif;
-  color: var(--text-color);
   font-size: 18px;
 }
-.formlabel {
-  font-family: "Jost", sans-serif;
-  color: var(--text-color);
-}
 .formName {
-  font-family: "Jost", sans-serif;
-  color: var(--text-color);
   font-weight: 500;
   border: none;
   border-bottom: 1px solid rgba(21, 60, 54, 0.5);
@@ -455,47 +379,25 @@ font-size: 22px;
   width: 100%;
   background-color: #e2e3e5;
 }
-
+.card-text,
 .numbers {
-  font-family: "Jost", sans-serif;
-  color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
 }
-.numbersHeading {
-  font-family: "Libre Caslon Text", serif;
-  font-size: 48px;
-}
+.extraServicesDescription,
 .numbersDescription {
-  font-family: "Jost", sans-serif;
+  font-family: Jost, sans-serif;
   color: var(--text-color);
   font-weight: 400;
   font-size: 18px;
 }
-.extraServicesHeading {
-  font-family: "Libre Caslon Text", serif;
-}
-.extraServicesDescription {
-  font-family: "Jost", sans-serif;
-  color: var(--text-color);
-  font-weight: 400;
-  font-size: 18px;
-}
-
 .carousel img {
   width: 100%;
-  /* 
-  max-height: 70px;
-  border-radius: 50%;
-  margin-right: 1rem;
-  overflow: hidden; */
 }
 .carousel-inner {
   padding: 1em;
 }
 video {
-  /* width: 100vw; */
-  /* height: 822px; */
   margin-top: 100px;
 }
 .overlay {
@@ -506,13 +408,16 @@ video {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.faq-ilustrations,
+.heading-page,
+.heading-page-2,
 .hero-content {
   position: relative;
+}
+.hero-content {
   z-index: 1;
   padding: 20px;
-  text-align: left;
-  color: white;
-  height: 78vh;
+  color: #fff;
   width: 100%;
   top: 50%;
   left: 15%;
@@ -544,14 +449,8 @@ video {
   margin: 0 0.5em;
   border: 0;
 }
-.card-text {
-  font-family: "Jost", sans-serif;
-  color: var(--text-color);
-  font-weight: 400;
-  font-size: 16px;
-}
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-next,
+.carousel-control-prev {
   width: 3rem;
   height: 3rem;
   background-color: grey;
@@ -559,27 +458,16 @@ video {
   top: 50%;
   transform: translateY(-50%);
 }
-
 .footerText {
   font-family: "Libre Caslon Text", serif;
-
   font-size: 32px;
 }
-
-.footerDescrition {
-  font-family: "Jost", sans-serif;
-  color: var(--text-color);
-}
-
 .feature > span {
   font-size: 25px;
-  font-family: "Jost", sans-serif !important;
+  font-family: Jost, sans-serif !important;
 }
 .feature > i {
   font-size: 85px;
-}
-.feature > img {
-  width: 70px;
 }
 .feature2 > img {
   width: 160px;
@@ -588,20 +476,11 @@ video {
   display: flex;
   overflow: hidden;
 }
-
 .logos-slide {
   display: flex;
   flex-shrink: 0;
 }
-
-.feature {
-  flex: 0 0 auto;
-  min-width: 200px;
-  text-align: center;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  margin: 0 20px;
-}
+.feature,
 .feature2 {
   flex: 0 0 auto;
   min-width: 200px;
@@ -610,7 +489,6 @@ video {
   transition: opacity 0.3s ease-in-out;
   margin: 0 20px;
 }
-
 @keyframes slide-left {
   0% {
     transform: translateX(0);
@@ -619,14 +497,8 @@ video {
     transform: translateX(-100%);
   }
 }
-
 .logos-slide-wrapper .logos-slide {
-  animation: slide-left 20s linear infinite;
-}
-
-.heading-page,
-.heading-page-2 {
-  position: relative;
+  animation: 20s linear infinite slide-left;
 }
 .heading-page .container,
 .heading-page .container-fluid,
@@ -661,7 +533,6 @@ video {
   position: relative;
   padding-top: 60px;
   padding-bottom: 63px;
-
   width: 100%;
   margin: 0 auto;
 }
@@ -671,10 +542,7 @@ video {
   width: 100%;
   height: 100%;
   left: 0;
-  background: #fff;
-  background-position: center center;
-  background-repeat: repeat;
-  background-image: url("./assets/images/bg/bg-pattern-1.png");
+  background: url("./assets/images/bg/bg-pattern-1.png") center center #fff;
   opacity: 0.1;
 }
 .heading-page-2 .heading-page-content:after {
@@ -719,31 +587,21 @@ video {
   width: 82%;
   text-align: center;
 }
-.contactHeading{
+.contactHeading {
   font-size: 40px;
 }
-
-.footerHeading{
-  font-family: "Libre Caslon Text", serif;
-  color: var(--text-color);
-}
-.contactDescrption{
-  font-family: "Jost", sans-serif;
+.contactDescrption {
+  font-family: Jost, sans-serif;
   color: var(--text-color);
   font-size: 20px;
 }
-.contactHeading2{
-  font-family: "Libre Caslon Text", serif;
-  color: var(--text-color);
-}
-.serviceHeading{
+.serviceHeading {
   font-family: "Libre Caslon Text", serif;
   color: var(--text-color);
   font-size: 24px;
 }
-
-
-.aboutus-page .aboutus-intro {
+.aboutus-page .aboutus-intro,
+.aboutus-page .aboutus-intro:last-child {
   margin-bottom: 120px;
 }
 .aboutus-page .aboutus-intro .au-btn {
@@ -755,18 +613,6 @@ video {
 .aboutus-page .aboutus-intro .js-waypoint {
   margin-top: 55px;
 }
-.aboutus-page .aboutus-intro:last-child {
-  margin-bottom: 120px;
-}
-.aboutus-page .right .intro-content {
-  text-align: left;
-}
-
-
-
-
-
-
 .left {
   margin-right: 30px;
   margin-left: -30px;
@@ -788,14 +634,13 @@ video {
 .left .intro-content p {
   margin-bottom: 15px;
 }
-
 .right {
   margin-left: 30px;
   margin-right: -30px;
 }
 .right .intro-content {
   text-align: center;
-  padding: 70px 50px 40px 50px;
+  padding: 70px 50px 40px;
 }
 .right .intro-content .item {
   margin-bottom: 38px;
@@ -805,19 +650,17 @@ video {
   padding-top: 15px;
   padding-bottom: 8px;
 }
-
-
-.line{
+.line {
   position: absolute;
-    content: "";
-    background-color: #f9f9f9;
-    background-image: url(./assets/images/bg/bg-pattern-1.png);
-    background-repeat: repeat;
-    background-position: center center;
-    opacity: 0.15;
-    z-index: 9;
+  content: "";
+  background-color: #f9f9f9;
+  background-image: url(./assets/images/bg/bg-pattern-1.png);
+  background-repeat: repeat;
+  background-position: center center;
+  opacity: 0.15;
+  z-index: 9;
 }
-.desc{
+.desc {
   font-size: 18px;
 }
 .blog-page {
@@ -827,157 +670,89 @@ video {
 .feature > img {
   width: 90px;
 }
-
-
 .card-wrapper {
   min-height: 100vh;
-  padding-bottom: 50px; /* footer fixed */
+  padding-bottom: 50px;
   padding-top: 25px;
   width: 100% !important;
 }
-
-/* p {
-  margin: 0 0 12px;
-  line-height: 1.5;
-}
-
-h2 {
-  margin: 12px 0;
-} */
-
-/* generics */
-/*================================================*/
-
 .content-cc {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-
-/* FAQ card */
-/*================================================*/
-
 .faq-card {
   background-color: #fff;
   border-radius: 20px;
-
-  /* max-width: 310px; */
   margin-top: 90px;
-
-  /* box-shadow: 0px 60px 50px -25px rgba(0, 0, 0, 0.35); */
 }
-
-/* FAQ card: imagenes */
-/*================================================*/
-
-.faq-ilustrations {
-  position: relative;
-}
-
 .faq-ilustrations .mobile.ilust {
   position: absolute;
   top: -110px;
   left: -30px;
   right: 0;
 }
-
 .mobile {
   display: block;
   margin: 0 auto;
 }
-
-/* FAQ card: main */
-/*================================================*/
-
 .faq-content {
   padding: 9px 25px 3rem;
 }
-
 .faq-content h1 {
   font-size: 32px;
   text-align: center;
   color: var(--text-color);
 }
-
 .faq-accordion {
   padding: 8px 0;
-  border-bottom: 1px solid hsl(240, 5%, 91%);
+  border-bottom: 1px solid #e6e6e9;
 }
-
-/* FAQ card: main title */
-/*================================================*/
-
-/* checkbox tgg-title*/
 input.tgg-title {
   appearance: unset !important;
   all: unset;
 }
-
 .faq-accordion-title label {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
 .faq-accordion-title h2 {
-  font-size: 18px /*var(--font-size)*/;
+  font-size: 18px;
   font-weight: 400;
   font-family: "Libre Caslon Text", serif;
- 
 }
-
 .faq-accordion-title span {
   margin-left: auto;
   transition: transform 0.4s ease-in-out;
 }
-
-/* FAQ card: main content */
-/*================================================*/
-
 .faq-accordion-content {
   color: var(--neutral-soft-color);
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s ease-in-out;
 }
-
-/* Effects */
-/*================================================*/
-
-/* main title, accordion title effects */
-
 .faq-accordion-title:hover h2 {
   color: var(--primary-soft-color);
 }
-
-/* onclick "" */
 .faq-accordion .tgg-title:checked + div > label > h2 {
   font-weight: 700;
 }
-
 .faq-accordion .tgg-title:checked + div > label > span {
   will-change: transform;
   transform: rotate(180deg);
 }
-
-/* main content, acordion text effect */
-
 .faq-accordion .tgg-title:checked ~ .faq-accordion-content {
   will-change: max-height;
   max-height: 350px;
 }
-
-@media screen and (min-width: 1024px) {
-}
-
-/* For Tablet View */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .heroSectionTitle {
     font-size: 32px;
     line-height: 40px;
   }
-  .heroButton{
+  .heroButton {
     font-size: 20px;
   }
   .hero-content {
@@ -989,24 +764,28 @@ input.tgg-title {
     margin-bottom: 640px;
   }
 }
-
-/* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
   .heroSectionTitle {
     font-size: 28px;
     line-height: 40px;
   }
-  .heroDescription {
+  .aboutUsDescription,
+  .conterLabel,
+  .ctaSectionDescription,
+  .heroDescription,
+  .numbersDescription,
+  .servicesDescription,
+  .whyChooseUsDescription {
     font-size: 16px;
   }
-  .heroButton{
+  .heroButton {
     font-size: 20px;
   }
   .aboutUsHeading,
-  .whyChooseUsHeading,
-  .servicesHeading,
+  .counterText,
   .numbersHeading,
-  .counterText {
+  .servicesHeading,
+  .whyChooseUsHeading {
     font-size: 32px;
   }
   .ctaSectionHeading {
@@ -1016,14 +795,6 @@ input.tgg-title {
   }
   .contactHeading {
     font-size: 26px;
-  }
-  .aboutUsDescription,
-  .whyChooseUsDescription,
-  .servicesDescription,
-  .numbersDescription,
-  .conterLabel,
-  .ctaSectionDescription {
-    font-size: 16px;
   }
   .whyChooseUsBtn2 {
     width: 232px;
@@ -1044,8 +815,8 @@ input.tgg-title {
     height: 50vh;
     margin-top: 215px;
   }
-  .project-carousel .slick-prev,
-  .project-carousel .slick-next {
+  .project-carousel .slick-next,
+  .project-carousel .slick-prev {
     left: 50%;
     top: 105%;
   }
@@ -1055,32 +826,10 @@ input.tgg-title {
   .navbar-brand img {
     width: 170px;
   }
-  .serviceHeading{
+  .serviceHeading {
     font-family: "Libre Caslon Text", serif;
     color: var(--text-color);
     font-size: 25px;
     margin-top: 20px;
   }
 }
-
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px) and (orientation: landscape) {
-}
-
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-}
-
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
-}
-
-
