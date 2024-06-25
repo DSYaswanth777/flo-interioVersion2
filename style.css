@@ -827,108 +827,6 @@ video {
 .feature > img {
   width: 90px;
 }
-@media screen and (min-width: 1024px) {
-}
-
-/* For Tablet View */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .heroSectionTitle {
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
-
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-  .heroSectionTitle {
-    font-size: 28px;
-    line-height: 40px;
-  }
-  .heroDescription {
-    font-size: 16px;
-  }
-  .aboutUsHeading,
-  .whyChooseUsHeading,
-  .servicesHeading,
-  .numbersHeading,
-  .counterText {
-    font-size: 32px;
-  }
-  .ctaSectionHeading {
-    line-height: 35px;
-    font-size: 26px;
-    width: 90vw;
-  }
-  .contactHeading {
-    font-size: 26px;
-  }
-  .aboutUsDescription,
-  .whyChooseUsDescription,
-  .servicesDescription,
-  .numbersDescription,
-  .conterLabel,
-  .ctaSectionDescription {
-    font-size: 16px;
-  }
-  .whyChooseUsBtn2 {
-    width: 232px;
-  }
-  .heroSectionContainer {
-    left: 40% !important;
-    top: 35%;
-  }
-  video {
-    height: 550px;
-    margin-top: 100px;
-  }
-  .feature > img {
-    width: 70px;
-  }
-  .hero-content {
-    left: 0;
-    height: 50vh;
-    margin-top: 215px;
-  }
-  .project-carousel .slick-prev,
-  .project-carousel .slick-next {
-    left: 50%;
-    top: 105%;
-  }
-  .contactSection {
-    margin-bottom: 580px;
-  }
-  .navbar-brand img {
-    width: 170px;
-  }
-  .serviceHeading{
-    font-family: "Libre Caslon Text", serif;
-    color: var(--text-color);
-    font-size: 25px;
-    margin-top: 20px;
-  }
-}
-
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px) and (orientation: landscape) {
-}
-
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-}
-
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
-}
-
-
 
 
 .card-wrapper {
@@ -1069,3 +967,120 @@ input.tgg-title {
   will-change: max-height;
   max-height: 350px;
 }
+
+@media screen and (min-width: 1024px) {
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .heroSectionTitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .heroButton{
+    font-size: 20px;
+  }
+  .hero-content {
+    left: 5%;
+    height: 50vh;
+    margin-top: 250px;
+  }
+  .contactSection {
+    margin-bottom: 640px;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .heroSectionTitle {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .heroDescription {
+    font-size: 16px;
+  }
+  .heroButton{
+    font-size: 20px;
+  }
+  .aboutUsHeading,
+  .whyChooseUsHeading,
+  .servicesHeading,
+  .numbersHeading,
+  .counterText {
+    font-size: 32px;
+  }
+  .ctaSectionHeading {
+    line-height: 35px;
+    font-size: 26px;
+    width: 90vw;
+  }
+  .contactHeading {
+    font-size: 26px;
+  }
+  .aboutUsDescription,
+  .whyChooseUsDescription,
+  .servicesDescription,
+  .numbersDescription,
+  .conterLabel,
+  .ctaSectionDescription {
+    font-size: 16px;
+  }
+  .whyChooseUsBtn2 {
+    width: 232px;
+  }
+  .heroSectionContainer {
+    left: 40% !important;
+    top: 35%;
+  }
+  video {
+    height: 550px;
+    margin-top: 100px;
+  }
+  .feature > img {
+    width: 70px;
+  }
+  .hero-content {
+    left: 0;
+    height: 50vh;
+    margin-top: 215px;
+  }
+  .project-carousel .slick-prev,
+  .project-carousel .slick-next {
+    left: 50%;
+    top: 105%;
+  }
+  .contactSection {
+    margin-bottom: 580px;
+  }
+  .navbar-brand img {
+    width: 170px;
+  }
+  .serviceHeading{
+    font-family: "Libre Caslon Text", serif;
+    color: var(--text-color);
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+
