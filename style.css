@@ -747,7 +747,7 @@ input.tgg-title {
   will-change: max-height;
   max-height: 350px;
 }
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .heroSectionTitle {
     font-size: 32px;
     line-height: 40px;
@@ -764,7 +764,7 @@ input.tgg-title {
     margin-bottom: 640px;
   }
 }
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+@media screen and (max-width: 480px) and (orientation: portrait) {
   .heroSectionTitle {
     font-size: 28px;
     line-height: 40px;
