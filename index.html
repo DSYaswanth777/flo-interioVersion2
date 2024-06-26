@@ -39,24 +39,30 @@
       href="./assets/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      media="print"
+      onload="this.media='all'"
     />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+      media="print"
+      onload="this.media='all'"
     />
-
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+      media="print"
+      onload="this.media='all'"
     />
     <link
       rel="stylesheet"
@@ -64,8 +70,15 @@
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
@@ -73,7 +86,8 @@
         <a class="navbar-brand" href="/">
           <img
             src="./assets/images/logo/floInterioLogoBlack.png"
-            alt=""
+            alt="Logo"
+            loading="lazy"
             class="bg- p-3"
           />
         </a>
@@ -202,9 +216,7 @@
           Flow Interio's Touch
         </h1>
         <a href="/contact-us">
-          <button
-            class="btn btn-lg  px-3 px-md-5 py-2 py-md-3 heroButton  "
-          >
+          <button class="btn btn-lg px-3 px-md-5 py-2 py-md-3 heroButton">
             Book Free Consultation
           </button>
         </a>
@@ -236,7 +248,7 @@
               </button>
             </a>
           </div>
-          <div class="w-100 h-100  order-sm-1 order-md-1 order-lg-2">
+          <div class="w-100 h-100 order-sm-1 order-md-1 order-lg-2">
             <iframe
               src="https://f.nativeforms.com/ATEZmSL1jZmg1YvJjSU1Db"
               width="100%"
@@ -259,7 +271,8 @@
             >
               <img
                 src="./assets/images/whychooseus/10YearsWarranty.png"
-                alt=""
+                alt="Warranty icon"
+                loading="lazy"
                 width="100"
               />
               <span>10 Years Warranty</span>
@@ -267,19 +280,31 @@
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/easyEmi's.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/easyEmi's.png"
+                alt="EMI Icon"
+                loading="lazy"
+              />
               <span>Easy EMI's</span>
             </div>
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/45Delivery.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/45Delivery.png"
+                alt="Delivery Icon"
+                loading="lazy"
+              />
               <span>45 Days Delivery</span>
             </div>
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/germanWood.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/germanWood.png"
+                alt="Ply Wood Image"
+                loading="lazy"
+              />
               <span>Use Of BWP Ply Wood</span>
             </div>
             <div
@@ -287,14 +312,19 @@
             >
               <img
                 src="./assets/images/whychooseus/customizedDesigns.png"
-                alt=""
+                alt="Customization Icon"
+                loading="lazy"
               />
               <span>Customized Designs</span>
             </div>
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/qulaityChecks.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/qulaityChecks.png"
+                alt="Qulaity Checks"
+                loading="lazy"
+              />
               <span>Quality Checks</span>
             </div>
             <div
@@ -306,7 +336,11 @@
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/expert.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/expert.png"
+                alt="Trained Experts"
+                loading="lazy"
+              />
               <span>Trained Experts</span>
             </div>
           </div>
@@ -316,28 +350,40 @@
             >
               <img
                 src="./assets/images/whychooseus/10YearsWarranty.png"
-                alt=""
+                alt="Warranty icon"
+                loading="lazy"
                 width="100"
               />
-
               <span>10 Years Warranty</span>
             </div>
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/easyEmi's.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/easyEmi's.png"
+                alt="EMI Icon"
+                loading="lazy"
+              />
               <span>Easy EMI's</span>
             </div>
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/45Delivery.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/45Delivery.png"
+                alt="Delivery Icon"
+                loading="lazy"
+              />
               <span>45 Days Delivery</span>
             </div>
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/germanWood.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/germanWood.png"
+                alt="Ply Wood Image"
+                loading="lazy"
+              />
               <span>Use Of BWP Ply Wood</span>
             </div>
             <div
@@ -345,14 +391,19 @@
             >
               <img
                 src="./assets/images/whychooseus/customizedDesigns.png"
-                alt=""
+                alt="Customization Icon"
+                loading="lazy"
               />
               <span>Customized Designs</span>
             </div>
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/qulaityChecks.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/qulaityChecks.png"
+                alt="Qulaity Checks"
+                loading="lazy"
+              />
               <span>Quality Checks</span>
             </div>
             <div
@@ -364,7 +415,11 @@
             <div
               class="feature d-flex flex-column justify-content-center align-items-center gap-2"
             >
-              <img src="./assets/images/whychooseus/expert.png" alt="" />
+              <img
+                src="./assets/images/whychooseus/expert.png"
+                alt="Trained Experts"
+                loading="lazy"
+              />
               <span>Trained Experts</span>
             </div>
           </div>
@@ -375,7 +430,7 @@
     <section class="aboutSection py-5">
       <div class="container py-5">
         <div
-          class="d-flex gap-5 justify-content-start align-items-center flex-column flex-sm-row flex-md-column flex-lg-row "
+          class="d-flex gap-5 justify-content-start align-items-center flex-column flex-sm-row flex-md-column flex-lg-row"
         >
           <div
             class="w-100 h-100 d-flex flex-column gap-4 justify-content-start align-items-start order-2 order-sm-2 order-md-2 order-lg-1"
@@ -406,7 +461,8 @@
           <div class="w-100 h-100 order-1 order-sm-1 order-md-1 order-lg-2">
             <img
               src="./assets/images/aboutus/aboutus.jpg"
-              alt=""
+              alt="about-us Image"
+              loading="lazy"
               height="500"
               style="object-fit: cover"
               class="w-100 shadow-sm rounded"
@@ -419,13 +475,14 @@
     <section class="whyChooseUs pb-5">
       <div class="container py-5">
         <div
-          class="d-flex gap-5 justify-content-start align-items-center flex-column flex-sm-row flex-md-column flex-lg-row "
+          class="d-flex gap-5 justify-content-start align-items-center flex-column flex-sm-row flex-md-column flex-lg-row"
         >
           <div class="w-100 h-100">
             <img
               src="./assets/images/whychooseus/4507.jpg"
-              alt=""
+              alt="Why Choose Interior Image"
               height="600"
+              loading="lazy"
               style="object-fit: cover"
               class="w-100 shadow-sm rounded"
             />
@@ -511,12 +568,13 @@
 
               <!--project-text end-->
             </div>
-            <div class="col-lg-7 pt-5 pt-md-0  pt-sm-5 pt-md-5 pt-lg-0 ">
+            <div class="col-lg-7 pt-5 pt-md-0 pt-sm-5 pt-md-5 pt-lg-0">
               <div class="project-carousel d-flex justify-content-between">
                 <div class="project-item">
                   <img
                     src="./assets/images/services/residentialInteriorImg.jpg"
-                    alt=""
+                    alt="Residential Interior Service"
+                    loading="lazy"
                     class="w-100 h-100"
                   />
                   <div class="project-info">
@@ -534,7 +592,8 @@
                 <div class="project-item">
                   <img
                     src="./assets/images/services/commericalInterior.jpg"
-                    alt=""
+                    alt="Commerical Interior Service"
+                    loading="lazy"
                     class="w-100 h-100"
                   />
                   <div class="project-info">
@@ -552,7 +611,8 @@
                 <div class="project-item">
                   <img
                     src="./assets/images/services/turnkeyInteriorImg.jpg"
-                    alt=""
+                    alt="Turnkey Projects"
+                    loading="lazy"
                     class="w-100 h-100"
                   />
                   <div class="project-info">
@@ -567,7 +627,8 @@
                 <div class="project-item">
                   <img
                     src="./assets/images/services/3dInteriorImg.jpg"
-                    alt=""
+                    alt="3D Design Services"
+                    loading="lazy"
                     class="w-100 h-100"
                   />
                   <div class="project-info">
@@ -582,7 +643,8 @@
                 <div class="project-item">
                   <img
                     src="./assets/images/services/rennovationInterior.jpeg"
-                    alt=""
+                    alt="Renovation Interior Service"
+                    loading="lazy"
                     class="w-100 h-100"
                   />
                   <div class="project-info">
@@ -621,14 +683,15 @@
           </p>
         </div>
         <div
-          class="d-flex justify-content-center align-items-center flex-column flex-sm-row flex-md-column flex-lg-row "
+          class="d-flex justify-content-center align-items-center flex-column flex-sm-row flex-md-column flex-lg-row"
         >
           <div
             class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
           >
             <img
               src="./assets/images/whychooseus/appointment.svg"
-              alt=""
+              alt="Appointment Icon"
+              loading="lazy"
               class="w-100 h-100"
             />
             <h3 class="whyChooseUsHeading fs-4 fw-bold">Book An Appointment</h3>
@@ -638,7 +701,8 @@
           >
             <img
               src="./assets/images/whychooseus/DesignSelection.png"
-              alt=""
+              alt="Design Selection"
+              loading="lazy"
               class="w-100 h-100"
             />
             <h3 class="whyChooseUsHeading fs-4 fw-bold">Design Selection</h3>
@@ -648,7 +712,8 @@
           >
             <img
               src="./assets/images/whychooseus/Production.png"
-              alt=""
+              alt=" Production Begins At Factory"
+              loading="lazy"
               class="w-100 h-100"
             />
             <h3 class="whyChooseUsHeading fs-4 fw-bold">
@@ -660,8 +725,9 @@
           >
             <img
               src="./assets/images/whychooseus/installation.jpg"
-              alt=""
+              alt="Installation At Site"
               class="w-100 h-100"
+              loading="lazy"
             />
             <h3 class="whyChooseUsHeading fs-4 fw-bold">
               Installation At Site
@@ -672,7 +738,8 @@
           >
             <img
               src="./assets/images/whychooseus/moveIn.png"
-              alt=""
+              alt="Move In"
+              loading="lazy"
               class="w-100 h-100"
             />
             <h3 class="whyChooseUsHeading fs-4 fw-bold">Move In</h3>
@@ -701,7 +768,7 @@
         </h1>
 
         <div
-          class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column fflex-sm-row flex-md-column flex-lg-row  "
+          class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column fflex-sm-row flex-md-column flex-lg-row"
         >
           <div class="w-100 d-flex flex-column p-4 rounded shadow">
             <i class="fas fa-hard-hat fs-2"></i>
@@ -732,7 +799,7 @@
           </div>
         </div>
         <div
-          class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column flex-sm-row flex-md-column flex-lg-row "
+          class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column flex-sm-row flex-md-column flex-lg-row"
         >
           <div class="w-100 d-flex flex-column p-4 rounded shadow">
             <i class="fas fa-paint-roller fs-2"></i>
@@ -755,9 +822,10 @@
           <div class="w-100 h-100 d-flex flex-column position-relative">
             <img
               src="./assets/images/gatedcommunitiesSection/transformImages.jpg"
-              alt=""
+              alt="CTA"
               class="w-100 rounded"
               height="255"
+              loading="lazy"
               style="object-fit: cover"
             />
             <div class="overlay position-absolute"></div>
@@ -875,8 +943,9 @@
     <section class="contactSection position-relative h-100">
       <img
         src="./assets/images/contactSection/contactSection3.jpeg"
-        alt=""
+        alt="CTA Some Interior Image"
         class="w-100"
+        loading="lazy"
         height="850"
         style="object-fit: cover"
       />
@@ -884,7 +953,7 @@
         <div>
           <div class="container">
             <div
-              class="d-flex gap-0 gap-md-5 justify-content-start px-0 px-md-5 align-items-center flex-column flex-sm-row flex-md-column flex-lg-row "
+              class="d-flex gap-0 gap-md-5 justify-content-start px-0 px-md-5 align-items-center flex-column flex-sm-row flex-md-column flex-lg-row"
             >
               <div
                 class="w-100 py-5 my-5 h-100 d-flex flex-column gap-3 justify-content-center align-items-start"
@@ -944,6 +1013,7 @@
                     src="https://f.nativeforms.com/ATEZmSL1jZmg1YvJjSU1Db"
                     width="100%"
                     height="500"
+                    title="Contact Form iframe"
                     frameborder="0"
                   >
                   </iframe>
@@ -1085,7 +1155,7 @@
             <img
               src="./assets/images/brandPartners/brand1.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
           <div
@@ -1094,7 +1164,7 @@
             <img
               src="./assets/images/brandPartners/brand2.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
           <div
@@ -1103,7 +1173,7 @@
             <img
               src="./assets/images/brandPartners/brand4.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
           <div
@@ -1112,7 +1182,7 @@
             <img
               src="./assets/images/brandPartners/brand5.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
           <div
@@ -1121,7 +1191,7 @@
             <img
               src="./assets/images/brandPartners/brand6.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
           <div
@@ -1130,7 +1200,7 @@
             <img
               src="./assets/images/brandPartners/brand7.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
 
@@ -1140,7 +1210,7 @@
             <img
               src="./assets/images/brandPartners/brand8.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
           <div
@@ -1149,7 +1219,7 @@
             <img
               src="./assets/images/brandPartners/brand9.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
           <div
@@ -1158,7 +1228,7 @@
             <img
               src="./assets/images/brandPartners/brand10.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
           <div
@@ -1167,7 +1237,7 @@
             <img
               src="./assets/images/brandPartners/brand11.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
           <div
@@ -1176,7 +1246,7 @@
             <img
               src="./assets/images/brandPartners/brand12.webp"
               alt="brand Partner"
-              width=""
+             loading="lazy"
             />
           </div>
         </div>
@@ -1184,57 +1254,102 @@
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand1.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand1.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand2.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand2.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand4.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand4.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand5.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand5.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand6.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand6.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand7.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand7.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
+          </div>
+
+          <div
+            class="feature2 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="./assets/images/brandPartners/brand8.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand8.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand9.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand9.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand10.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand10.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand11.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
           <div
             class="feature2 d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="./assets/images/brandPartners/brand11.webp" alt="" />
-          </div>
-          <div
-            class="feature2 d-flex flex-column justify-content-center align-items-center"
-          >
-            <img src="./assets/images/brandPartners/brand12.webp" alt="" />
+            <img
+              src="./assets/images/brandPartners/brand12.webp"
+              alt="brand Partner"
+             loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -1254,12 +1369,14 @@
           </a>
         </div>
         <hr />
-        <div class="d-flex pt-5 flex-column flex-sm-row flex-md-column flex-lg-row  gap-5">
+        <div
+          class="d-flex pt-5 flex-column flex-sm-row flex-md-column flex-lg-row gap-5"
+        >
           <div class="w-100">
             <img
               src="./assets/images/logo/floInterioLogoBlack.png"
-              alt=""
-              class=""
+              alt="Logo"
+              loading="lazy"
               width="200"
             />
             <div class="contact d-flex flex-column gap-3 pt-4">
@@ -1387,11 +1504,10 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
+      defer
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script>
       $(".project-carousel").slick({
         slidesToShow: 2,
