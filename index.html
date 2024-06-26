@@ -1556,6 +1556,11 @@
       });
     </script>
     <script>
+      /*	CHECK FOR PREFERED REDUCED MOTION
+		AND IF SO, DO NOT RUN ANY OF THE SCRIPTS
+		SPLITTING THE LIST ELEMENT INTO MULTIPLE
+		LISTS OR APPLYING THE SCROLL ANIMATION
+*/
       const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
       if (mediaQuery && !mediaQuery.matches) {
         const tagScroller = document.querySelector(".tag-scroller");
