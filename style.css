@@ -65,7 +65,7 @@ p {
   font-size: 60px;
   line-height: 102px;
 }
-.heroButton{
+.heroButton {
   font-family: Jost, sans-serif !important;
   font-weight: 400;
 }
@@ -822,4 +822,11 @@ input.tgg-title {
     font-size: 25px;
     margin-top: 20px;
   }
+}
+.servicesIcon {
+  transition: transform 0.5s ease; /* Adjust the duration and timing function as needed */
+}
+
+.servicesIcon:hover {
+  transform: rotateY(180deg); /* Use rotateX(180deg) for vertical flip */
 }

@@ -79,12 +79,14 @@
       media="print"
       onload="this.media='all'"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
@@ -215,7 +217,7 @@
       </video>
       <div class="overlay"></div>
 
-      <div class="hero-content">
+      <div class="hero-content" data-aos="fade-left">
         <p
           style="background-color: #00000020; width: fit-content"
           class="text-white fs-6 heroSpecial p-2 text-uppercase fw-bold"
@@ -469,7 +471,10 @@
               </button>
             </a>
           </div>
-          <div class="w-100 h-100 order-1 order-sm-1 order-md-1 order-lg-2">
+          <div
+            class="w-100 h-100 order-1 order-sm-1 order-md-1 order-lg-2"
+            data-aos="fade-left"
+          >
             <img
               src="./assets/images/aboutus/aboutus.jpg"
               alt="about-us Image"
@@ -488,7 +493,7 @@
         <div
           class="d-flex gap-5 justify-content-start align-items-center flex-column flex-sm-row flex-md-column flex-lg-row"
         >
-          <div class="w-100 h-100">
+          <div class="w-100 h-100" data-aos="fade-right">
             <img
               src="./assets/images/whychooseus/4507.jpg"
               alt="Why Choose Interior Image"
@@ -518,7 +523,7 @@
             >
               <div class="d-flex flex-column">
                 <div>
-                  <h1 class="counterText">750+</h1>
+                  <h1 id="finishedProjectsCounter" class="counterText">750+</h1>
                   <p class="conterLabel">
                     Finished Projects <span style="color: #ffff">Pr</span>
                   </p>
@@ -526,13 +531,13 @@
               </div>
               <div class="d-flex flex-column">
                 <div>
-                  <h1 class="counterText">7+</h1>
+                  <h1 id="experienceCounter" class="counterText">7+</h1>
                   <p class="conterLabel">Years Of Experience</p>
                 </div>
               </div>
               <div class="d-flex flex-column">
                 <div>
-                  <h1 class="counterText">30+</h1>
+                  <h1 id="communitiesCounter" class="counterText">30+</h1>
                   <p class="conterLabel">Major Communities</p>
                 </div>
               </div>
@@ -698,6 +703,7 @@
         >
           <div
             class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
+            data-aos="fade-left"
           >
             <img
               src="./assets/images/whychooseus/appointment.svg"
@@ -709,6 +715,7 @@
           </div>
           <div
             class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
+            data-aos="fade-right"
           >
             <img
               src="./assets/images/whychooseus/DesignSelection.png"
@@ -720,6 +727,7 @@
           </div>
           <div
             class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
+            data-aos="fade-left"
           >
             <img
               src="./assets/images/whychooseus/Production.png"
@@ -733,6 +741,7 @@
           </div>
           <div
             class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
+            data-aos="fade-right"
           >
             <img
               src="./assets/images/whychooseus/installation.jpg"
@@ -746,6 +755,7 @@
           </div>
           <div
             class="w-100 d-flex justify-content-center align-items-center flex-column text-center"
+            data-aos="fade-left"
           >
             <img
               src="./assets/images/whychooseus/moveIn.png"
@@ -759,6 +769,7 @@
         <a
           href="https://f.nativeforms.com/ATEZmSL1jZmg1YvJjSU1Db"
           class="text-center d-flex justify-content-center align-items-center mt-5"
+          data-aos="fade-up"
         >
           <button
             class="btn btn-lg text-white px-3 px-md-5 py-2 py-md-3 whyChooseUsBtn whyChooseUsBtn2"
@@ -781,17 +792,29 @@
         <div
           class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column fflex-sm-row flex-md-column flex-lg-row"
         >
-          <div class="w-100 d-flex flex-column p-4 rounded shadow">
-            <i class="fas fa-hard-hat fs-2"></i>
-            <h4 class="extraServicesHeading fs-4 pt-3">Civil Work</h4>
+          <div
+            class="w-100 d-flex flex-column p-4 rounded shadow justify-content-start align-items-start border-2  border"
+            data-aos="fade-up"
+          >
+            <i
+              class="fas fa-hard-hat fs-2 bg-dark text-white p-3 rounded-circle servicesIcon"
+       
+            ></i>
+            <h4 class="extraServicesHeading fs-4 pt-3" >Civil Work</h4>
             <p class="extraServicesDescription">
               Our civil work services ensure robust construction and seamless
               integration of architectural plans, enhancing the durability and
               functionality
             </p>
           </div>
-          <div class="w-100 d-flex flex-column p-4 rounded shadow">
-            <i class="fas fa-bolt fs-2"></i>
+          <div
+            class="w-100 d-flex flex-column p-4 rounded shadow justify-content-start align-items-start border-2  border"
+            data-aos="fade-up"
+
+          >
+            <i
+              class="fas fa-bolt fs-2 bg-dark text-white p-3 rounded-circle servicesIcon"
+            ></i>
             <h4 class="extraServicesHeading fs-4 pt-3">Electrical Work</h4>
             <p class="extraServicesDescription">
               From wiring to fixture installation, our electrical services
@@ -799,8 +822,12 @@
               interior design requirements.
             </p>
           </div>
-          <div class="w-100 d-flex flex-column p-4 rounded shadow">
-            <i class="fa fa-th fs-2"></i>
+          <div
+            class="w-100 d-flex flex-column p-4 rounded shadow justify-content-start align-items-start border-2  border"
+            data-aos="fade-up"
+
+          >
+            <i class="fa fa-th fs-2 bg-dark text-white p-3 rounded-circle servicesIcon"></i>
             <h4 class="extraServicesHeading fs-4 pt-3">Tiles</h4>
             <p class="extraServicesDescription">
               Transform your floors with our wide range of tiles, expertly
@@ -812,8 +839,14 @@
         <div
           class="d-flex pt-5 gap-5 justify-content-center align-items-center px-5 flex-column flex-sm-row flex-md-column flex-lg-row"
         >
-          <div class="w-100 d-flex flex-column p-4 rounded shadow">
-            <i class="fas fa-paint-roller fs-2"></i>
+          <div
+            class="w-100 d-flex flex-column p-4 rounded shadow justify-content-start align-items-start border-2  border"
+            data-aos="fade-up"
+
+          >
+            <i
+              class="fas fa-paint-roller fs-2 bg-dark text-white p-3 rounded-circle servicesIcon"
+            ></i>
             <h4 class="extraServicesHeading fs-4 pt-3">Wall Papers</h4>
             <p class="extraServicesDescription">
               Elevate your walls with our collection of stylish wallpapers,
@@ -821,8 +854,14 @@
               design theme.
             </p>
           </div>
-          <div class="w-100 d-flex flex-column p-4 rounded shadow">
-            <i class="fas fa-paint-brush fs-2"></i>
+          <div
+            class="w-100 d-flex flex-column p-4 rounded shadow justify-content-start align-items-start border-2  border"
+            data-aos="fade-up"
+
+          >
+            <i
+              class="fas fa-paint-brush fs-2 bg-dark text-white p-3 rounded-circle servicesIcon"
+            ></i>
             <h4 class="extraServicesHeading fs-4 pt-3">Painting</h4>
             <p class="extraServicesDescription">
               Achieve flawless finishes and vibrant hues with our professional
@@ -830,7 +869,10 @@
               of your spaces.
             </p>
           </div>
-          <div class="w-100 h-100 d-flex flex-column position-relative">
+          <div class="w-100 h-100 d-flex flex-column position-relative" 
+          data-aos="fade-up"
+          
+          >
             <img
               src="./assets/images/gatedcommunitiesSection/transformImages.jpg"
               alt="CTA"
@@ -848,7 +890,7 @@
                 href="/contact-us"
                 class="text-white extraServicesDescription link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                 >Learn More
-                <i class="fa fa-arrow-right text-white ms-2 pt-2"></i
+                <i class="fa fa-arrow-right text-white ms-2 pt-2 "></i
               ></a>
             </div>
           </div>
@@ -885,28 +927,40 @@
               <div
                 class="d-flex flex-column justify-content-center align-items-center"
               >
-                <div>
-                  <h1 class="counterText">750+</h1>
+                <div 
+            data-aos="fade-up"
+                
+                >
+                  <h1 id="finishedProjectsCounter" class="counterText">750+</h1>
                   <p class="conterLabel">Finished Projects</p>
                 </div>
               </div>
               <div class="d-flex flex-column">
-                <div>
-                  <h1 class="counterText">50+</h1>
+                <div 
+            data-aos="fade-up"
+                
+                >
+                  <h1 id="communitiesCounter" class="counterText">50+</h1>
                   <p class="conterLabel">Major Communities</p>
                 </div>
               </div>
             </div>
             <div class="d-flex justify-content-around align-items-center gap-3">
               <div class="d-flex flex-column">
-                <div>
-                  <h1 class="counterText">7+</h1>
+                <div 
+            data-aos="fade-up"
+                
+                >
+                  <h1 id="experienceCounter" class="counterText">7+</h1>
                   <p class="conterLabel">Years Of Experience</p>
                 </div>
               </div>
 
               <div class="d-flex flex-column">
-                <div>
+                <div
+            data-aos="fade-up"
+                
+                >
                   <h1 class="counterText">10+</h1>
                   <p class="conterLabel">Interior Designers</p>
                 </div>
@@ -960,7 +1014,7 @@
         height="850"
         style="object-fit: cover"
       />
-      <div class="position-absolute bg-dark h-100 w-100 top-0 bg-opacity-25">
+      <div class="position-absolute bg-dark h-100 w-100 top-0 bg-opacity-50">
         <div>
           <div class="container">
             <div
@@ -969,7 +1023,7 @@
               <div
                 class="w-100 py-5 my-5 h-100 d-flex flex-column gap-3 justify-content-center align-items-start"
               >
-                <h6 class="text-uppercase aboutus text-white mt-5">
+                <h6 class="text-uppercase aboutus text-white mt-5 ">
                   Get In Touch
                 </h6>
                 <h1 class="whyChooseUsHeading text-white">
@@ -983,20 +1037,20 @@
 
                 <div class="contact d-flex flex-column gap-3">
                   <a href="tel:+919494469091" class="text-white contactNum"
-                    >+91 9494469091</a
+                    >  <i class="fa fa-phone text-white"></i> +91 9494469091</a
                   >
                   <a href="tel:+919032999763" class="text-white contactNum"
-                    >+91 9032999763</a
+                    >   <i class="fa fa-phone text-white"></i> +91 9032999763</a
                   >
                 </div>
                 <p class="whyChooseUsDescription text-white fs-5">
-                  Plot no 1299, 1st & 2nd Floor, KK Ashika Avenue, Rd Number 29,
+                 <i class="fa fa-map text-white me-2"></i> Plot no 1299, 1st & 2nd Floor, KK Ashika Avenue, Rd Number 29,
                   Ayyappa Society, Madhapur, Hyderabad, Telangana 500081
                 </p>
                 <a
                   href="mailto:info@flowinterio.com"
                   class="text-white contactNum"
-                  >info@flowinterio.com</a
+                  > <i class="fa fa-envelope text-white me-2"></i>info@flowinterio.com</a
                 >
                 <div
                   class="d-flex justify-content-start align-items-center gap-3"
@@ -1004,16 +1058,16 @@
                   <a
                     href="https://www.facebook.com/flowinterio/?locale=zh_CN&paipv=0&eav=AfYyYjCNd81tYDeZaNR5sE6HD2SZGykGhY1tvfON_oIW6wEPfHjR6s3c1eSkkn_QtPc&_rdr"
                   >
-                    <i class="fa-brands fa-facebook fa-2x text-white"></i>
+                    <i class="fa-brands fa-facebook fa-2x text-white servicesIcon" ></i>
                   </a>
                   <a href="https://www.instagram.com/flowinterio/?hl=en">
-                    <i class="fa-brands fa-instagram fa-2x text-white"></i>
+                    <i class="fa-brands fa-instagram fa-2x text-white servicesIcon"></i>
                   </a>
                   <a href="https://www.youtube.com/@FlowInterio">
-                    <i class="fa-brands fa-youtube fa-2x text-white"></i>
+                    <i class="fa-brands fa-youtube fa-2x text-white servicesIcon"></i>
                   </a>
                   <a href="https://x.com/FlowInterio">
-                    <i class="fa-brands fa-twitter fa-2x text-white"></i>
+                    <i class="fa-brands fa-twitter fa-2x text-white servicesIcon"></i>
                   </a>
                 </div>
               </div>
@@ -1429,7 +1483,8 @@
         class="d-flex justify-content-around pt-4 flex-column flex-md-row justify-content-center align-items-center text-center"
       >
         <h6 class="footerDescrition">
-          Desgined and Crafted by <a href="https://digitaladventure.in/"> Digital Adventure</a>
+          Desgined and Crafted by
+          <a href="https://digitaladventure.in/"> Digital Adventure</a>
         </h6>
         <h6 class="footerDescrition">
           ©2024. Flow Interio Private Limited. All Rights Reserved.
@@ -1507,6 +1562,9 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.9.3/countUp.min.js"></script>
+
     <script>
       $(".project-carousel").slick({
         slidesToShow: 2,
@@ -1594,6 +1652,85 @@
               tagList.style.setProperty("--duration", `${duration}s`);
             });
           }
+        }
+      });
+    </script>
+    <script>
+      function initAOS() {
+        AOS.init({
+          duration: 1000,
+          offset: 120,
+          easing: "ease-in-out",
+        });
+      }
+
+      // Function to trigger animations when elements come into view
+      function triggerAOS(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            AOS.refresh();
+          }
+        });
+      }
+
+      // Create an Intersection Observer instance
+      const observer = new IntersectionObserver(triggerAOS, { threshold: 0.5 });
+
+      // Observe elements with 'data-aos' attribute
+      document.querySelectorAll("[data-aos]").forEach((element) => {
+        observer.observe(element);
+      });
+
+      // Trigger AOS when the page loads
+      window.onload = function () {
+        initAOS();
+      };
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const options = { suffix: "+" };
+
+        const finishedProjectsCounter = new CountUp(
+          "finishedProjectsCounter",
+          0,
+          750,
+          0,
+          2.5,
+          options
+        );
+        const experienceCounter = new CountUp(
+          "experienceCounter",
+          0,
+          7,
+          0,
+          2.5,
+          options
+        );
+        const communitiesCounter = new CountUp(
+          "communitiesCounter",
+          0,
+          30,
+          0,
+          2.5,
+          options
+        );
+
+        if (!finishedProjectsCounter.error) {
+          finishedProjectsCounter.start();
+        } else {
+          console.error(finishedProjectsCounter.error);
+        }
+
+        if (!experienceCounter.error) {
+          experienceCounter.start();
+        } else {
+          console.error(experienceCounter.error);
+        }
+
+        if (!communitiesCounter.error) {
+          communitiesCounter.start();
+        } else {
+          console.error(communitiesCounter.error);
         }
       });
     </script>
