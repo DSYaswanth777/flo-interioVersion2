@@ -204,6 +204,10 @@ p {
   font-family: Jost, sans-serif;
   font-weight: 400;
   font-size: 18px;
+
+}
+.aboutUsDescription{
+  text-align: justify !important;
 }
 .aboutUsBtn,
 .whyChooseUsBtn {
@@ -652,6 +656,7 @@ video {
 }
 .desc {
   font-size: 18px;
+  text-align: justify !important;
 }
 .blog-page {
   display: flex;
