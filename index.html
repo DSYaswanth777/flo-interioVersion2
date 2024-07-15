@@ -1660,37 +1660,38 @@
         }
       });
     </script>
-    <script>
-      function initAOS() {
-        AOS.init({
-          duration: 1000,
-          offset: 120,
-          easing: "ease-in-out",
-        });
+<script>
+  function initAOS() {
+    AOS.init({
+      duration: 800,  // Adjust duration if needed
+      offset: 100,    // Adjust offset if needed
+      easing: "ease-in-out",
+    });
+  }
+
+  // Function to trigger animations when elements come into view
+  function triggerAOS(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        AOS.refresh();
       }
+    });
+  }
 
-      // Function to trigger animations when elements come into view
-      function triggerAOS(entries, observer) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            AOS.refresh();
-          }
-        });
-      }
+  // Create an Intersection Observer instance with a lower threshold
+  const observer = new IntersectionObserver(triggerAOS, { threshold: 0.1 });
 
-      // Create an Intersection Observer instance
-      const observer = new IntersectionObserver(triggerAOS, { threshold: 0.5 });
+  // Observe elements with 'data-aos' attribute
+  document.querySelectorAll("[data-aos]").forEach((element) => {
+    observer.observe(element);
+  });
 
-      // Observe elements with 'data-aos' attribute
-      document.querySelectorAll("[data-aos]").forEach((element) => {
-        observer.observe(element);
-      });
+  // Trigger AOS when the page loads
+  window.onload = function () {
+    initAOS();
+  };
+</script>
 
-      // Trigger AOS when the page loads
-      window.onload = function () {
-        initAOS();
-      };
-    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const options = { suffix: "+" };
