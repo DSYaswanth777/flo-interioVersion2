@@ -421,10 +421,10 @@ video {
   padding: 20px;
   color: #fff;
   width: 100%;
-  top: 50%;
+  top: 60%;
   left: 15%;
-  height: 60vh;
-  margin-top: 360px;
+  height: 70vh;
+  margin-top: 350px;
 }
 @media screen and (min-width: 576px) {
   .carousel-inner {
@@ -752,7 +752,7 @@ input.tgg-title {
   }
   .hero-content {
     left: 5%;
-    height: 50vh;
+    height: 60vh;
     margin-top: 250px;
   }
   .contactSection {
