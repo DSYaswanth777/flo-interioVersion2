@@ -61,9 +61,11 @@ p {
   display: block;
 }
 .heroSectionTitle {
-  font-family: "Libre Caslon Text", serif;
-  font-size: 50px;
-  line-height: 82px;
+  font-family: "Montserrat", sans-serif;
+
+font-weight: 700;
+  font-size: 45px;
+  line-height: 62px;
 
 }
 .heroButton {
