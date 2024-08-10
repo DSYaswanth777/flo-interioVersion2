@@ -852,7 +852,7 @@ width: 500px;
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .heroSectionTitle {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 40px;
   }
   .heroButton {
@@ -861,6 +861,7 @@ width: 500px;
   .hero-content {
     left: 5%;
     height: 60vh;
+    width: 90%;
     margin-top: 350px;
   }
   .contactSection {
