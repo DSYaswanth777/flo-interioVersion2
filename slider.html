@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="image-slider">
+        <img src="https://via.placeholder.com/300" alt="Image 1" class="slider-image" onclick="openFullscreen(this)">
+        <img src="https://via.placeholder.com/400" alt="Image 2" class="slider-image" onclick="openFullscreen(this)">
+        <img src="https://via.placeholder.com/300" alt="Image 3" class="slider-image" onclick="openFullscreen(this)">
+        <div class="controls">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+
+    <div id="fullscreen-overlay" class="fullscreen-overlay">
+        <span class="close" onclick="closeFullscreen()">&times;</span>
+        <img id="fullscreen-image" class="fullscreen-image">
+        <div class="controls">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

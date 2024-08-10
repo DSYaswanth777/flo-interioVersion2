@@ -62,12 +62,15 @@ p {
 }
 .heroSectionTitle {
   font-family: "Libre Caslon Text", serif;
-  font-size: 60px;
-  line-height: 102px;
+  font-size: 50px;
+  line-height: 82px;
+
 }
 .heroButton {
   font-family: Jost, sans-serif !important;
   font-weight: 400;
+  box-shadow: 3px 3px 1px #fff;
+  border: 2px solid #000 !important;
 }
 
 .heroSectionImg {
@@ -140,7 +143,7 @@ p {
 }
 .aboutus-page .right .intro-content,
 .hero-content {
-  text-align: left;
+  text-align: center;
 }
 .slick-next:hover:before,
 .slick-prev:hover:before {
@@ -189,6 +192,17 @@ p {
   font-weight: 400;
   color: var(--dark-background-color);
 }
+.whyChooseUsBtn{
+  box-shadow: 3px 3px 1px #000;
+  border: 2px solid #ffff !important;
+}
+.aboutUsBtn{
+  box-shadow: 3px 3px 1px #000;
+  border: 2px solid #ffff !important;
+}
+.whyChooseUsBtn:active,.aboutUsBtn:active{
+  background-color: #010101;
+}
 .aboutUsBtn,
 .aboutus,
 .heroButton:hover,
@@ -226,8 +240,8 @@ p {
 }
 .aboutUsBtn:hover,
 .whyChooseUsBtn:hover {
-  background-color: #fff;
-  color: #222631 !important;
+  background-color: #010101;
+  color: #ffff !important;
   border: 2px solid #000;
 }
 .heroButton {
@@ -410,6 +424,7 @@ video {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 .faq-ilustrations,
 .heading-page,
 .heading-page-2,
@@ -421,11 +436,13 @@ video {
   padding: 20px;
   color: #fff;
   width: 100%;
-  top: 60%;
-  left: 15%;
-  height: 70vh;
-  margin-top: 350px;
+  top: 80%;
+  left: 0%;
+  height: 100vh;
+  /* margin-top: 500px; */
 }
+
+
 @media screen and (min-width: 576px) {
   .carousel-inner {
     display: flex;
@@ -582,7 +599,7 @@ video {
   text-align: center;
 }
 .contactHeading {
-  font-size: 40px;
+  font-size: 50px;
 }
 .contactDescrption {
   font-family: Jost, sans-serif;
@@ -742,6 +759,95 @@ input.tgg-title {
   will-change: max-height;
   max-height: 350px;
 }
+
+.image-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-image {
+  margin: 0 10px;
+  cursor: pointer;
+width: 500px;
+
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  
+}
+
+.slider-image:hover {
+  transform: scale(1.05);
+}
+
+.prev, .next {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  height: 60px;
+  width: 40px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  /* border-radius: 50%; */
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.fullscreen-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .heroSectionTitle {
     font-size: 32px;
@@ -753,7 +859,7 @@ input.tgg-title {
   .hero-content {
     left: 5%;
     height: 60vh;
-    margin-top: 250px;
+    margin-top: 350px;
   }
   .contactSection {
     margin-bottom: 640px;
@@ -761,8 +867,11 @@ input.tgg-title {
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .heroSectionTitle {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 40px;
+  }
+  .slider-image {
+    margin: 0 0px;
   }
   .aboutUsDescription,
   .conterLabel,
@@ -928,3 +1037,6 @@ input.tgg-title {
     grid-row: calc(4 + var(--row-step));
   }
 }
+
+
+
