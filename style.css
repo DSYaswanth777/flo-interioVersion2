@@ -63,10 +63,9 @@ p {
 .heroSectionTitle {
   font-family: "Montserrat", sans-serif;
 
-font-weight: 700;
+  font-weight: 700;
   font-size: 45px;
   line-height: 62px;
-
 }
 .heroButton {
   font-family: Jost, sans-serif !important;
@@ -194,15 +193,16 @@ font-weight: 700;
   font-weight: 400;
   color: var(--dark-background-color);
 }
-.whyChooseUsBtn{
+.whyChooseUsBtn {
   box-shadow: 3px 3px 1px #000;
   border: 2px solid #ffff !important;
 }
-.aboutUsBtn{
+.aboutUsBtn {
   box-shadow: 3px 3px 1px #000;
   border: 2px solid #ffff !important;
 }
-.whyChooseUsBtn:active,.aboutUsBtn:active{
+.whyChooseUsBtn:active,
+.aboutUsBtn:active {
   background-color: #010101;
 }
 .aboutUsBtn,
@@ -220,9 +220,8 @@ font-weight: 700;
   font-family: Jost, sans-serif;
   font-weight: 400;
   font-size: 18px;
-
 }
-.aboutUsDescription{
+.aboutUsDescription {
   text-align: justify !important;
 }
 .aboutUsBtn,
@@ -443,7 +442,6 @@ video {
   height: 100vh;
   /* margin-top: 500px; */
 }
-
 
 @media screen and (min-width: 576px) {
   .carousel-inner {
@@ -774,19 +772,19 @@ input.tgg-title {
 .slider-image {
   margin: 0 10px;
   cursor: pointer;
-width: 500px;
+  width: 500px;
 
   height: 300px;
   object-fit: cover;
   transition: transform 0.3s;
-  
 }
 
 .slider-image:hover {
   transform: scale(1.05);
 }
 
-.prev, .next {
+.prev,
+.next {
   color: white;
   font-size: 30px;
   cursor: pointer;
@@ -849,7 +847,12 @@ width: 500px;
   cursor: pointer;
   transform: translateY(-50%);
 }
-
+.heroSectionImg {
+  width: 100%;
+  height: 99vh;
+  display: block;
+  object-fit: cover;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .heroSectionTitle {
     font-size: 28px;
@@ -867,6 +870,7 @@ width: 500px;
   .contactSection {
     margin-bottom: 640px;
   }
+
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .heroSectionTitle {
@@ -875,6 +879,11 @@ width: 500px;
   }
   .slider-image {
     margin: 0 0px;
+  }
+  .heroSectionImg{
+    object-fit: cover;
+    object-position: 55% 70%;
+
   }
   .aboutUsDescription,
   .conterLabel,
@@ -920,7 +929,7 @@ width: 500px;
   .hero-content {
     left: 0;
     height: 40vh;
-    margin-top:255px;
+    margin-top: 255px;
   }
   .project-carousel .slick-next,
   .project-carousel .slick-prev {
@@ -947,7 +956,6 @@ width: 500px;
 .servicesIcon:hover {
   transform: rotateY(180deg); /* Use rotateX(180deg) for vertical flip */
 }
-
 
 .grid {
   display: grid;
@@ -1040,6 +1048,3 @@ width: 500px;
     grid-row: calc(4 + var(--row-step));
   }
 }
-
-
-
